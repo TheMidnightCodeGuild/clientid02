@@ -16,15 +16,24 @@ const About = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/20"></div>
-      <div className="lg:max-w-[1300px] w-full mx-auto flex flex-col justify-start px-5 pt-10 md:pt-5">
+        <div className="lg:max-w-[1300px] w-full mx-auto flex flex-col justify-start px-5 pt-10 md:pt-5">
           <h1 className="text-4xl lg:text-5xl uppercase tracking-wider font-bold z-10 font-lexend">
             About us
           </h1>
           <nav className="flex z-10 mt-3 font-lexend" aria-label="Breadcrumb">
             <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
               <li className="inline-flex items-center">
-                <a href="/" className="inline-flex items-center text-base text-white">
-                  <svg className="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <a
+                  href="/"
+                  className="inline-flex items-center text-base text-white"
+                >
+                  <svg
+                    className="w-3 h-3 me-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"></path>
                   </svg>
                   Home
@@ -33,10 +42,24 @@ const About = () => {
 
               <li aria-current="page">
                 <div className="flex items-center">
-                  <svg className="rtl:rotate-180 w-3 h-3 text-white mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
+                  <svg
+                    className="rtl:rotate-180 w-3 h-3 text-white mx-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    ></path>
                   </svg>
-                  <span className="ms-1 text-base text-white md:ms-2">About Us</span>
+                  <span className="ms-1 text-base text-white md:ms-2">
+                    About Us
+                  </span>
                 </div>
               </li>
             </ol>
@@ -44,11 +67,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-blue-50 py-16">
+      <section className="bg-red-50 py-16">
         <div className="lg:max-w-[1300px] mx-auto px-4">
           <div className="grid lg:grid-cols-[420px_1fr] gap-8 items-start">
             <div className="relative">
-              <div className="rounded-[20px] border border-gray-200 overflow-hidden bg-blue-50 p-2">
+              <div className="rounded-[20px] border border-gray-200 overflow-hidden bg-red-50 p-2">
                 <Image
                   src="/images/founder.png"
                   alt="Founder"
@@ -61,55 +84,47 @@ const About = () => {
 
             <div>
               <div className="flex items-center gap-2 pb-2 mt-4">
-                <div className="w-3 h-3 bg-theme1 rounded-full"></div>
-                <span className="text-theme1 tracking-wider font-medium uppercase">
+                <div className="w-3 h-3 bg-theme2 rounded-full"></div>
+                <span className="text-theme2 tracking-wider font-medium uppercase">
                   Our Founder
                 </span>
               </div>
 
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 font-urbanist">
-               Mr. Seetaram Sharma
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 font-lexend">
+                Mr. Dev Bajpai
               </h2>
 
-              <div className="mt-2 text-base text-gray-700 leading-relaxed space-y-4 text-justify">
+              <div className="mt-2 lg:text-lg text-base text-gray-700 leading-relaxed space-y-6 text-justify">
                 <p>
-                  Mr. Seetaram Sharma, Founder and Managing Partner of V. K. Ladha
-                  &amp; Associates, is a distinguished Chartered Accountant with
-                  extensive experience in audit, taxation, project finance, and
-                  corporate advisory. His professional approach combines deep
-                  technical knowledge, ethical standards, and a practical
-                  understanding of complex financial and regulatory
-                  environments.
+                  Mr. Dev Bajpai, Founder of Shagun Shri Investment, is a
+                  dedicated Financial Consultant committed to helping
+                  individuals and families achieve financial stability and
+                  long-term financial freedom. With extensive knowledge of
+                  investment planning, insurance solutions, and tax-saving
+                  strategies, he provides reliable guidance tailored to each
+                  client’s financial goals.
                 </p>
 
                 <p>
-                  With over four decades of professional practice, he has worked
-                  closely with corporates, financial institutions, public sector
-                  undertakings, trusts, and educational institutions. His
-                  ability to understand client objectives, operational
-                  realities, and risk frameworks enables him to deliver clear,
-                  actionable, and compliant solutions through structured
-                  processes, strong governance, and transparent communication.
+                  He specializes in Mutual Funds, Life and General Insurance,
+                  Health Insurance, Motor Insurance, and Portfolio Management
+                  Services (PMS). Through a client-focused approach, he
+                  carefully understands financial needs, risk tolerance, and
+                  future objectives to recommend the most suitable financial
+                  solutions.
                 </p>
 
                 <p>
-                  With a client-centric and solution-oriented approach, he
-                  remains committed to delivering practical advisory support
-                  that strengthens financial controls, enhances regulatory
-                  compliance, and promotes long-term business sustainability.
-                  His deep involvement across engagements allows him to
-                  anticipate challenges, mitigate risks, and provide timely
-                  guidance tailored to each client’s unique operating
-                  environment.lorem2 Lorem ipsum dolor sit, amet consectetur
-                  adipisicing elit. Corporis, non libero neque eaque delectus
-                  odio alias? Mollitia, architecto cupiditate dolore atque
-                  magni ducimus!
+                  With a strong commitment to transparency, trust, and
+                  professional service, Mr. Dev Bajpai helps clients make
+                  informed financial decisions. His goal is to simplify
+                  financial planning, protect assets through the right insurance
+                  coverage, and build sustainable investment strategies that
+                  support long-term wealth creation and financial security.
                 </p>
               </div>
             </div>
           </div>
-
-      
         </div>
       </section>
 
@@ -121,7 +136,7 @@ const About = () => {
             </h1>
             <div className="h-1.5 w-32 bg-blue-600 rounded-full"></div>
           </div>
-    
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 md:p-8 text-center rounded-3xl  bg-gray-500">
               <div className="w-16 h-16 md:w-20 md:h-20 inline-flex items-center justify-center rounded-full bg-white shadow-xl shadow-black/40 hover:rotate-3 mb-5">
@@ -142,9 +157,9 @@ const About = () => {
                   Our Mission
                 </h2>
                 <p className="text-sm md:text-base text-gray-200">
-               To provide disciplined, transparent, and goal-based financial
-  advisory services that help individuals and families build
-  long-term wealth and financial security.
+                  To provide disciplined, transparent, and goal-based financial
+                  advisory services that help individuals and families build
+                  long-term wealth and financial security.
                 </p>
               </div>
             </div>
@@ -172,15 +187,15 @@ const About = () => {
                 </svg>
               </div>
               <div className="flex-grow">
-           <h2 className="text-white text-xl md:text-2xl font-bold mb-3">
-  Our Vision
-</h2>
+                <h2 className="text-white text-xl md:text-2xl font-bold mb-3">
+                  Our Vision
+                </h2>
 
-<p className="text-sm md:text-base text-white">
-  To become a trusted financial partner for families by
-  delivering ethical investment guidance and sustainable
-  wealth creation solutions.
-</p>
+                <p className="text-sm md:text-base text-white">
+                  To become a trusted financial partner for families by
+                  delivering ethical investment guidance and sustainable wealth
+                  creation solutions.
+                </p>
               </div>
             </div>
             <div className="p-6 md:p-8 text-center rounded-3xl bg-gray-500 ">
@@ -207,136 +222,155 @@ const About = () => {
                 </svg>
               </div>
               <div className="flex-grow">
-             <h2 className="text-gray-100 text-xl md:text-2xl font-bold mb-3">
-  Our Values
-</h2>
+                <h2 className="text-gray-100 text-xl md:text-2xl font-bold mb-3">
+                  Our Values
+                </h2>
 
-<p className="text-sm md:text-base text-gray-200">
-  Integrity, transparency, client-first approach, disciplined
-  investing, and long-term relationship building define
-  everything we do.
-</p>
+                <p className="text-sm md:text-base text-gray-200">
+                  Integrity, transparency, client-first approach, disciplined
+                  investing, and long-term relationship building define
+                  everything we do.
+                </p>
               </div>
             </div>
           </div>
-    </div>
+        </div>
       </section>
-      <section className="text-gray-800 py-12">
-      <div className="lg:max-w-[1300px] mx-auto px-4 grid lg:grid-cols-2 gap-6 lg:gap-12">
-        
-        <div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-theme1 rounded-sm"></div>
-            <span className="text-theme1 tracking-wider font-medium uppercase">
-              Chartered Accountants
-            </span>
-          </div>
+<section className="text-gray-800 py-12">
+  <div className="lg:max-w-[1300px] mx-auto px-4 grid lg:grid-cols-2 gap-6 lg:gap-12">
+    
+    <div>
+      <div className="flex items-center gap-2">
+        <div className="w-3 h-3 bg-theme1 rounded-sm"></div>
+        <span className="text-theme1 tracking-wider font-medium uppercase">
+          Financial Consultant
+        </span>
+      </div>
 
-     <h2 className="text-3xl lg:text-4xl font-urbanist font-bold mt-4 mb-6 text-gray-900">
-  Over Four Decades of Trusted Audit, Taxation &amp; Advisory Excellence
-</h2>
+      <h2 className="text-3xl lg:text-4xl font-lexend font-bold mt-4 mb-6 text-gray-900">
+        Smart Investment & Insurance Solutions for Your Financial Freedom
+      </h2>
 
-        <p className="text-gray-600 leading-relaxed mb-4">
-  V. K. Ladha &amp; Associates, established in 1984, is a distinguished
-  Chartered Accountancy firm delivering comprehensive audit,
-  taxation, financial advisory, and compliance solutions across
-  diverse industries. Our approach combines technical expertise,
-  regulatory precision, and a deep understanding of business realities.
-</p>
-<p className="text-gray-600 leading-relaxed">
-  Every engagement is guided by experienced leadership, ensuring
-  professional independence, transparent communication, and timely
-  execution. Our structured approach combines rigorous analysis,
-  sector-specific expertise, and a thorough understanding of evolving
-  regulatory frameworks. We work closely with clients to anticipate
-  risks, strengthen governance systems, and implement practical
-  solutions that enhance financial clarity and operational stability.
- 
-</p>
+      <p className="text-gray-600 leading-relaxed mb-4">
+        Shagun Shri Investment, led by financial consultant Mr. Dev Bajpai,
+        provides reliable financial planning and investment services designed
+        to help individuals and families build long-term financial security.
+        Our services include mutual funds, insurance solutions, tax planning,
+        and portfolio management tailored to each client’s financial goals.
+      </p>
+
+      <p className="text-gray-600 leading-relaxed">
+        We believe in simplifying financial decisions through transparent
+        guidance and practical strategies. By understanding each client’s
+        financial objectives, risk appetite, and future plans, we recommend
+        customized investment and protection solutions that promote wealth
+        creation, risk management, and long-term financial stability.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-2 gap-4">
+      
+      <div className="bg-theme1/10 border pt-16 border-gray-200 rounded-2xl p-6 shadow-sm">
+        <p className="text-4xl font-bold text-theme1">10+</p>
+        <p className="text-gray-600 text-sm">
+          Years of Financial Consulting
+        </p>
+      </div>
+
+      <div className="bg-gray-100 border pt-16 border-gray-200 rounded-2xl p-6 shadow-sm">
+        <p className="text-4xl font-bold text-gray-900">500+</p>
+        <p className="text-gray-600 text-sm">
+          Happy Clients Served
+        </p>
+      </div>
+
+      <div
+        className="relative rounded-2xl overflow-hidden shadow-sm col-span-2 h-80 lg:h-72"
+        style={{
+          backgroundImage: "url('/images/investment-advisor.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+
+        <div className="relative mt-20 z-10 h-full flex flex-col justify-center p-6">
+          <p className="text-3xl font-lexend font-semibold text-white">
+            Trusted Financial Guidance
+          </p>
+          <p className="text-sm mt-2 text-white/80 max-w-md">
+            Helping clients plan investments, secure their future through
+            insurance, and make informed financial decisions that support
+            long-term wealth creation and financial protection.
+          </p>
         </div>
+      </div>
 
-       
-        <div className="grid grid-cols-2 gap-4">
-          
-          <div className="bg-theme1/10 border pt-16 border-gray-200 rounded-2xl p-6 shadow-sm">
-    <p className="text-4xl font-bold text-theme1">40+</p>
-<p className="text-gray-600 text-sm">Years of Professional Excellence</p>
-          </div>
-
-          
-          <div className="bg-gray-100 border pt-16 border-gray-200 rounded-2xl p-6 shadow-sm">
-   <p className="text-4xl font-bold text-gray-900">9+</p>
-<p className="text-gray-600 text-sm">
-  Cities Across India
-</p>
-          </div>
-
-       
-          <div
-            className="relative rounded-2xl overflow-hidden shadow-sm col-span-2 h-80 lg:h-72"
-            style={{
-              backgroundImage: "url('/images/partner-section.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
+    </div>
+  </div>
+</section>
+      <section className="pb-10 px-4 bg-white">
+   <div className="relative overflow-hidden max-w-[1300px] mx-auto rounded-[36px] px-10 py-16 lg:py-24 bg-[linear-gradient(135deg,#0E5A74_0%,#F68B1F_55%,#F04A3A_100%)] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.25)]">
+          <svg
+            className="absolute -top-10 -right-10 w-[360px] h-[400px] opacity-[0.18]"
+            viewBox="0 0 360 260"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-  
-            <div className="absolute inset-0 bg-black/40"></div>
+            <circle cx="70" cy="70" r="70" fill="white"></circle>
+            <path d="M170 0L260 90L170 180V0Z" fill="white"></path>
+            <path
+              d="M260 90C310 90 360 140 360 190V0H260V90Z"
+              fill="white"
+            ></path>
+          </svg>
 
-        
-            <div className="relative mt-20 z-10 h-full flex flex-col justify-center p-6">
-       <p className="text-3xl font-urbanist font-semibold text-white">SCA Experience</p>
-<p className="text-sm mt-2 text-white/80 max-w-md">
-  Associated as Statutory Central Auditors with banks,
-  an NBFC, and a Miniratna PSU, reflecting strong
-  governance and institutional trust.
-</p>
+          <div
+            className="pointer-events-none absolute inset-0 opacity-[0.05]"
+            style={{
+              backgroundImage:
+                "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3'/></filter><rect width='100%' height='100%' filter='url(#n)' opacity='0.35'/></svg>\")",
+            }}
+          ></div>
+
+          <div className="absolute inset-0 rounded-[36px] ring-1 ring-white/25"></div>
+
+          <div className="relative z-10 flex flex-col lg:flex-row gap-8 items-start lg:items-center justify-between">
+            <div>
+              <h3 className="text-3xl lg:text-3xl font-lexend font-semibold text-white leading-snug max-w-5xl">
+              Trusted financial guidance for smarter investment decisions.
+              </h3>
+
+              <p className="text-white/90 mt-4 max-w-2xl text-lg font-medium">
+              Expert support in mutual funds, insurance, tax planning, and financial security.
+              </p>
             </div>
+
+            <Link
+              href="/contact-us"
+              className="group relative inline-flex items-center gap-3 bg-white text-gray-900 rounded-full pl-7 pr-5 py-3 px-20 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 border border-green-900"
+            >
+              Contact Us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-circle-arrow-out-up-right-icon lucide-circle-arrow-out-up-right"
+              >
+                <path d="M22 12A10 10 0 1 1 12 2"></path>
+                <path d="M22 2 12 12"></path>
+                <path d="M16 2h6v6"></path>
+              </svg>
+            </Link>
           </div>
         </div>
-      </div>
-    </section>
-<section className="pb-10 px-4 bg-white">
-      <div className="relative overflow-hidden max-w-[1300px] mx-auto rounded-[36px] px-10 py-16 lg:py-24 bg-[linear-gradient(135deg,#18ba60_0%,#35c97a_45%,#5ed99a_100%)] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.25)]">
-
-        <svg className="absolute -top-10 -right-10 w-[360px] h-[400px] opacity-[0.18]" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="70" cy="70" r="70" fill="white"></circle>
-          <path d="M170 0L260 90L170 180V0Z" fill="white"></path>
-          <path d="M260 90C310 90 360 140 360 190V0H260V90Z" fill="white"></path>
-        </svg>
-
-     
-        <div className="pointer-events-none absolute inset-0 opacity-[0.05]" style={{
-            backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3'/></filter><rect width='100%' height='100%' filter='url(#n)' opacity='0.35'/></svg>\")"
-          }}></div>
-
-        
-        <div className="absolute inset-0 rounded-[36px] ring-1 ring-white/25"></div>
-
-       
-        <div className="relative z-10 flex flex-col lg:flex-row gap-8 items-start lg:items-center justify-between">
-          <div>
-            <h3 className="text-3xl lg:text-4xl font-urbanist font-semibold text-white leading-snug max-w-5xl">
-              Trusted chartered accountants for financial decisions.
-            </h3>
-
-            <p className="text-white/90 mt-4 max-w-2xl text-xl font-medium">
-              Expert audit, taxation, and advisory support you can rely on.
-            </p>
-          </div>
-
-       
-          <Link href="/contact-us" className="group relative inline-flex items-center gap-3 bg-white text-gray-900 rounded-full pl-7 pr-5 py-3 px-20 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 border border-green-900">
-            Contact Us
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-arrow-out-up-right-icon lucide-circle-arrow-out-up-right">
-              <path d="M22 12A10 10 0 1 1 12 2"></path>
-              <path d="M22 2 12 12"></path>
-              <path d="M16 2h6v6"></path>
-            </svg>
-          </Link>
-        </div>
-      </div>
-    </section>    
+      </section>
       <Footer />
     </>
   );

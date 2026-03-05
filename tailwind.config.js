@@ -18,8 +18,8 @@ module.exports = {
         lexend: ["Lexend", "sans-serif"],
       },
       colors: {
-        theme1: " #3D3E65",
-        theme2: "#178d44",
+        theme1: "#E83B2E",
+        theme2: "#0E5A74",
       },
     },
   },
