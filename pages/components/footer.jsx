@@ -19,10 +19,10 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-gray-50 font-medium text-sm lg:text-base mb-6">
-            We at Sankalp Shree Investment specialize in providing mutual fund
+            We at Shagun Shree specialize in providing mutual fund
             advisory, insurance and comprehensive financial planning solutions.
           </p>
-          <div className="flex flex-wrap gap-3">
+          {/* <div className="flex flex-wrap gap-3">
             <Link
               href="https://www.linkedin.com/company/"
               target="_blank"
@@ -54,7 +54,7 @@ const Footer = () => {
                 ></path>
               </svg>
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="lg:col-span-1">
@@ -143,14 +143,6 @@ const Footer = () => {
                 className="text-sm lg:text-base text-gray-50 hover:text-white"
               >
                 Mediclaim
-              </Link>
-            </div>
-            <div>
-              <Link
-                href="/services/Web&mobile"
-                className="text-sm lg:text-base text-gray-50 hover:text-white"
-              >
-                Tax Planning
               </Link>
             </div>
           </nav>

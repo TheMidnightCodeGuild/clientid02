@@ -14,12 +14,13 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        dm: ["DM Sans", "sans-serif"],
         dmsans: ["DM Sans", "sans-serif"],
         lexend: ["Lexend", "sans-serif"],
       },
       colors: {
         theme1: "#E83B2E",
-        theme2: "#0E5A74",
+        theme2: "#3B82F6",
       },
     },
   },

@@ -8,73 +8,81 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <section
-        className="bg-cover h-[200px] lg:h-[550px] mt-10 lg:mt-0 flex items-center bg-center object-cover justify-center flex-col relative"
-        style={{
-          backgroundImage: "url('/images/home.png')",
-          objectFit: "cover",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="lg:max-w-[1300px] w-full mx-auto flex flex-col justify-start px-5 pt-10 md:pt-5">
-          <h1 className="text-4xl lg:text-5xl uppercase tracking-wider font-bold z-10 font-lexend">
-            About us
-          </h1>
-          <nav className="flex z-10 mt-3 font-lexend" aria-label="Breadcrumb">
-            <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-              <li className="inline-flex items-center">
-                <a
-                  href="/"
-                  className="inline-flex items-center text-base text-white"
-                >
-                  <svg
-                    className="w-3 h-3 me-2.5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"></path>
-                  </svg>
-                  Home
-                </a>
-              </li>
+  <section className="h-[200px] lg:h-[550px] mt-10 lg:mt-0 flex items-center justify-center flex-col relative overflow-hidden">
 
-              <li aria-current="page">
-                <div className="flex items-center">
-                  <svg
-                    className="rtl:rotate-180 w-3 h-3 text-white mx-1"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 6 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 9 4-4-4-4"
-                    ></path>
-                  </svg>
-                  <span className="ms-1 text-base text-white md:ms-2">
-                    About Us
-                  </span>
-                </div>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
+  {/* Background Image (mirrored) */}
+  <div
+    className="absolute inset-0 bg-cover bg-center scale-x-[-1]"
+    style={{
+      backgroundImage: "url('/images/home.png')",
+    }}
+  ></div>
 
-      <section className="bg-red-50 py-16">
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/20"></div>
+
+  {/* Content */}
+  <div className="relative lg:max-w-[1300px] w-full mx-auto flex flex-col justify-start px-4 pt-10 md:pt-5">
+    
+    <h1 className="text-4xl lg:text-5xl uppercase tracking-wider font-bold text-white font-lexend">
+      About Us
+    </h1>
+
+    <nav className="flex mt-3 font-lexend" aria-label="Breadcrumb">
+      <ol className="inline-flex items-center space-x-1 md:space-x-2">
+
+        <li className="inline-flex items-center">
+          <Link href="/" className="inline-flex items-center text-base text-white">
+            <svg
+              className="w-3 h-3 me-2.5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+            </svg>
+            Home
+          </Link>
+        </li>
+
+        <li>
+          <div className="flex items-center">
+            <svg
+              className="w-3 h-3 text-white mx-1"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+
+            <span className="ms-1 text-base text-white md:ms-2">
+              About Us
+            </span>
+          </div>
+        </li>
+
+      </ol>
+    </nav>
+
+  </div>
+
+</section>
+
+      <section className="bg-gray-50 py-16">
         <div className="lg:max-w-[1300px] mx-auto px-4">
           <div className="grid lg:grid-cols-[420px_1fr] gap-8 items-start">
             <div className="relative">
-              <div className="rounded-[20px] border border-gray-200 overflow-hidden bg-red-50 p-2">
+              <div className="rounded-[20px] border border-gray-200 overflow-hidden bg-theme2/10 p-2">
                 <Image
                   src="/images/founder.png"
-                  alt="Founder"
+                  alt="Mr. Dev Bajpai"
                   width={500}
                   height={500}
                   className="w-full h-[500px] object-top object-cover rounded-[20px]"
@@ -91,12 +99,12 @@ const About = () => {
               </div>
 
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 font-lexend">
-                Mr. Dev Bajpai
+                Mr. Dev M. Bajpai
               </h2>
 
               <div className="mt-2 lg:text-lg text-base text-gray-700 leading-relaxed space-y-6 text-justify">
                 <p>
-                  Mr. Dev Bajpai, Founder of Shagun Shri Investment, is a
+                  Mr. Dev M. Bajpai, Founder of Shagun Shri Investment, is a
                   dedicated Financial Consultant committed to helping
                   individuals and families achieve financial stability and
                   long-term financial freedom. With extensive knowledge of
@@ -116,7 +124,7 @@ const About = () => {
 
                 <p>
                   With a strong commitment to transparency, trust, and
-                  professional service, Mr. Dev Bajpai helps clients make
+                  professional service, Mr. Dev M. Bajpai helps clients make
                   informed financial decisions. His goal is to simplify
                   financial planning, protect assets through the right insurance
                   coverage, and build sustainable investment strategies that
@@ -236,81 +244,78 @@ const About = () => {
           </div>
         </div>
       </section>
-<section className="text-gray-800 py-12">
-  <div className="lg:max-w-[1300px] mx-auto px-4 grid lg:grid-cols-2 gap-6 lg:gap-12">
-    
-    <div>
-      <div className="flex items-center gap-2">
-        <div className="w-3 h-3 bg-theme1 rounded-sm"></div>
-        <span className="text-theme1 tracking-wider font-medium uppercase">
-          Financial Consultant
-        </span>
-      </div>
+      <section className="text-gray-800 py-12">
+        <div className="lg:max-w-[1300px] mx-auto px-4 grid lg:grid-cols-2 gap-6 lg:gap-12">
+          <div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 bg-theme1 rounded-sm"></div>
+              <span className="text-theme1 tracking-wider font-medium uppercase">
+                Financial Consultant
+              </span>
+            </div>
 
-      <h2 className="text-3xl lg:text-4xl font-lexend font-bold mt-4 mb-6 text-gray-900">
-        Smart Investment & Insurance Solutions for Your Financial Freedom
-      </h2>
+            <h2 className="text-3xl lg:text-4xl font-lexend font-bold mt-4 mb-6 text-gray-900">
+              Smart Investment & Insurance Solutions for Your Financial Freedom
+            </h2>
 
-      <p className="text-gray-600 leading-relaxed mb-4">
-        Shagun Shri Investment, led by financial consultant Mr. Dev Bajpai,
-        provides reliable financial planning and investment services designed
-        to help individuals and families build long-term financial security.
-        Our services include mutual funds, insurance solutions, tax planning,
-        and portfolio management tailored to each client’s financial goals.
-      </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Shagun Shri Investment, led by financial consultant Mr. Dev
+              Bajpai, provides reliable financial planning and investment
+              services designed to help individuals and families build long-term
+              financial security. Our services include mutual funds, insurance
+              solutions, tax planning, and portfolio management tailored to each
+              client’s financial goals.
+            </p>
 
-      <p className="text-gray-600 leading-relaxed">
-        We believe in simplifying financial decisions through transparent
-        guidance and practical strategies. By understanding each client’s
-        financial objectives, risk appetite, and future plans, we recommend
-        customized investment and protection solutions that promote wealth
-        creation, risk management, and long-term financial stability.
-      </p>
-    </div>
+            <p className="text-gray-600 leading-relaxed">
+              We believe in simplifying financial decisions through transparent
+              guidance and practical strategies. By understanding each client’s
+              financial objectives, risk appetite, and future plans, we
+              recommend customized investment and protection solutions that
+              promote wealth creation, risk management, and long-term financial
+              stability.
+            </p>
+          </div>
 
-    <div className="grid grid-cols-2 gap-4">
-      
-      <div className="bg-theme1/10 border pt-16 border-gray-200 rounded-2xl p-6 shadow-sm">
-        <p className="text-4xl font-bold text-theme1">10+</p>
-        <p className="text-gray-600 text-sm">
-          Years of Financial Consulting
-        </p>
-      </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-theme1/10 border pt-16 border-gray-200 rounded-2xl p-6 shadow-sm">
+              <p className="text-4xl font-bold text-theme1">13+</p>
+              <p className="text-gray-600 text-sm">
+                Years of Financial Consulting
+              </p>
+            </div>
 
-      <div className="bg-gray-100 border pt-16 border-gray-200 rounded-2xl p-6 shadow-sm">
-        <p className="text-4xl font-bold text-gray-900">500+</p>
-        <p className="text-gray-600 text-sm">
-          Happy Clients Served
-        </p>
-      </div>
+            <div className="bg-gray-100 border pt-16 border-gray-200 rounded-2xl p-6 shadow-sm">
+              <p className="text-4xl font-bold text-gray-900">800+</p>
+              <p className="text-gray-600 text-sm">Happy Clients Served</p>
+            </div>
 
-      <div
-        className="relative rounded-2xl overflow-hidden shadow-sm col-span-2 h-80 lg:h-72"
-        style={{
-          backgroundImage: "url('/images/investment-advisor.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
+            <div
+              className="relative rounded-2xl overflow-hidden shadow-sm col-span-2 h-80 lg:h-72"
+              style={{
+                backgroundImage: "url('/images/home.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/40"></div>
 
-        <div className="relative mt-20 z-10 h-full flex flex-col justify-center p-6">
-          <p className="text-3xl font-lexend font-semibold text-white">
-            Trusted Financial Guidance
-          </p>
-          <p className="text-sm mt-2 text-white/80 max-w-md">
-            Helping clients plan investments, secure their future through
-            insurance, and make informed financial decisions that support
-            long-term wealth creation and financial protection.
-          </p>
+              <div className="relative mt-20 z-10 h-full flex flex-col justify-center p-6">
+                <p className="text-3xl font-lexend font-semibold text-white">
+                  Trusted Financial Guidance
+                </p>
+                <p className="text-sm mt-2 text-white/80 max-w-md">
+                  Helping clients plan investments, secure their future through
+                  insurance, and make informed financial decisions that support
+                  long-term wealth creation and financial protection.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
       <section className="pb-10 px-4 bg-white">
-   <div className="relative overflow-hidden max-w-[1300px] mx-auto rounded-[36px] px-10 py-16 lg:py-24 bg-[linear-gradient(135deg,#0E5A74_0%,#F68B1F_55%,#F04A3A_100%)] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.25)]">
+        <div className="relative overflow-hidden max-w-[1300px] mx-auto rounded-[36px] px-10 py-16 lg:py-24 bg-[linear-gradient(135deg,#0E5A74_0%,#F68B1F_55%,#F04A3A_100%)] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.25)]">
           <svg
             className="absolute -top-10 -right-10 w-[360px] h-[400px] opacity-[0.18]"
             viewBox="0 0 360 260"
@@ -338,11 +343,12 @@ const About = () => {
           <div className="relative z-10 flex flex-col lg:flex-row gap-8 items-start lg:items-center justify-between">
             <div>
               <h3 className="text-3xl lg:text-3xl font-lexend font-semibold text-white leading-snug max-w-5xl">
-              Trusted financial guidance for smarter investment decisions.
+                Trusted financial guidance for smarter investment decisions.
               </h3>
 
               <p className="text-white/90 mt-4 max-w-2xl text-lg font-medium">
-              Expert support in mutual funds, insurance, tax planning, and financial security.
+                Expert support in mutual funds, insurance, tax planning, and
+                financial security.
               </p>
             </div>
 

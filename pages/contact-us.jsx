@@ -5,20 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "./components/footer";
 export default function Contactus() {
-  const [captchaValue, setCaptchaValue] = useState(null);
 
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!captchaValue) {
-      alert("Please verify that you are not a robot");
-      return;
-    }
-    // Handle form submission
-  };
 
   return (
     <div>
@@ -56,14 +43,14 @@ export default function Contactus() {
      
 
       <section className="py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto lg:max-w-[1300px] px-4">
           <div className="grid lg:grid-cols-2 grid-cols-1">
             <div className="lg:mb-0 mb-10">
               <div className="group w-full h-full">
                 <div className="relative h-full">
                   <Image
                     src="https://pagedone.io/asset/uploads/1696488602.png"
-                    alt="ContactUs tailwind section"
+                    alt="ContactUs "
                     className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"
                     width={500}
                     height={300}
@@ -89,7 +76,7 @@ export default function Contactus() {
                           />
                         </svg>
                         <h5 className="text-white text-lg font-semibold leading-6 ml-5">
-                          +1 
+                        +91 9425904786
                         </h5>
                       </a>
                       <a href="javascript:;" className="flex items-center mb-6">
@@ -107,7 +94,7 @@ export default function Contactus() {
                           />
                         </svg>
                         <h5 className="text-white text-lg font-semibold leading-6 ml-5">
-                          info
+                       shagunshri.invest@gmail.com
                         </h5>
                       </a>
                       <a href="javascript:;" className="flex items-center">
@@ -129,8 +116,7 @@ export default function Contactus() {
                           />
                         </svg>
                         <h5 className="text-white text-lg font-semibold leading-6 ml-5">
-        , FL 33301
-                          USA
+      203/1, C Block, Dindayal Upadhyay Complex, Indore Road, Ujjain – 456010
                         </h5>
                       </a>
                     </div>
@@ -143,7 +129,7 @@ export default function Contactus() {
               <h2 className="text-indigo-600 font-manrope text-4xl font-semibold leading-10 mb-11">
                 Send Us A Message
               </h2>
-              <form onSubmit={handleSubmit}>
+              <form >
                 <input
                   type="text"
                   className="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10"

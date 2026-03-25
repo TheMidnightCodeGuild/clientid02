@@ -1,211 +1,631 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 import Navbar from "./components/header";
 import Footer from "./components/footer";
 
 const Services = () => {
   return (
-    <>
-    <Navbar />
-    <section
-      className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-start object-cover object-center justify-center flex-col relative"
-      style={{ backgroundImage: "url('/images/home.png')" }}>
-      <div className="absolute inset-0 bg-gray-800/50"></div>
-      <div className="max-w-[1300px] mx-auto px-4 flex items-start justify-start flex-col w-full gap-3 relative z-10 lg:mt-0 mt-10">
-        <h1 className="font-bricolageGrotesque text-3xl lg:text-5xl text-left text-white relative z-0 font-bold">
-       Our Services & Products
-        </h1>
-        <p className="text-white text-sm font-medium lg:text-base font-plusJakartaSans max-w-xl">
-          Integrated freight and fulfillment solutions that manage
-          transportation, storage, and order delivery seamlessly, helping
-          businesses move faster and scale efficiently.
-        </p>
-        <a href="/contact-us" className="ml-0 mt-1 rounded-full bg-white text-black font-semibold text-sm lg:text-base px-2 py-1 lg:px-3 lg:py-1.5 flex items-center transition-colors duration-200">
-          Contact us
-          <span className="ml-2 w-8 h-8 rounded-full bg-theme1 flex items-center justify-center transition-colors duration-200">
-            <svg className="lg:w-5 lg:h-5 w-4 h-4 text-white transition-colors duration-200" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 18L18 6M18 6H10M18 6V14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-            </svg>
-          </span>
-        </a>
-      </div>
-    </section>
-    <section className="w-full bg-[#F8F9FB] lg:py-16 py-12">
-      <div className="lg:max-w-[1300px] mx-auto px-4 lg:px-6 text-left ">
-        <div className="flex flex-col text-left mb-4">
-          <h2 className="font-sora text-3xl lg:text-4xl font-semibold text-left mb-2">
-            PRODUCTS (Financial Instruments You Invest In)
-          </h2>
-          <p className="text-gray-600 lg:text-lg text-base text-left mb-4 max-w-full">
-            These are actual financial products clients purchase/invest in. These are regulated financial products offered through AMCs / Insurance Companies / PMS providers.
+    <main className="font-dm">
+      <Navbar />
+      <section
+        className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-start justify-center flex-col relative font-dm"
+        style={{ backgroundImage: "url('/images/home.png')" }}
+      >
+        <div className="absolute inset-0 bg-gray-800/50"></div>
+
+        <div className="lg:max-w-[1300px] mx-auto px-4 flex items-start justify-start flex-col w-full gap-3 relative z-10 lg:mt-0 mt-10">
+          <h1 className="font-lexend text-3xl lg:text-5xl text-left text-white font-bold">
+            Our Services & Products
+          </h1>
+
+          <p className="text-white text-sm font-medium lg:text-base  max-w-xl">
+            We provide trusted financial solutions including mutual fund
+            investments, insurance plans, retirement planning, portfolio
+            management services, and tax planning to help individuals and
+            families achieve long-term financial security and growth.
           </p>
+
+          <a
+            href="/contact-us"
+            className="ml-0 mt-1 rounded-full bg-white text-black font-semibold text-sm lg:text-base px-2 py-1 lg:px-3 lg:py-1.5 flex items-center transition-colors duration-200"
+          >
+            Contact us
+            <span className="ml-2 w-8 h-8 rounded-full bg-theme1 flex items-center justify-center">
+              <svg
+                className="lg:w-5 lg:h-5 w-4 h-4 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 18L18 6M18 6H10M18 6V14"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
         </div>
-      
-        <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
-          <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
-            <h3 id="mutual-funds" className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
-              Mutual Funds
-            </h3>
-
-            <p className="text-gray-600 mb-4 max-w-full">
-              A regulated investment product offered through AMCs.
-            </p>
-
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
-                </svg>
-                <p className="text-gray-700 text-sm md:text-base">
+      </section>
+      <section className="w-full bg-[#F8F9FB] py-12 lg:py-16">
+        {/* CONTAINER */}
+        <div className="max-w-[1300px] mx-auto px-4 ">
+          {/* ================= PRODUCTS ================= */}
+          <div className="mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
+              <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
+                <h3
+                  id="mutual-funds"
+                  className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"
+                >
                   Mutual Funds
-                </p>
-              </li>
+                </h3>
 
-              <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
-                </svg>
-                <p className="text-gray-700 text-sm md:text-base">
-                  Portfolio Management Service (PMS)
+                <p className="text-gray-600 mb-4 max-w-full">
+                  Build long-term wealth with diversified, professionally
+                  managed portfolios across equity, debt, and hybrid categories.
+                  We help you select funds based on your goals, time horizon,
+                  and risk profile.
                 </p>
-              </li>
-              <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
-                </svg>
-                <p className="text-gray-700 text-sm md:text-base">
+
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Fund selection aligned to your goals (SIP / Lump sum) and
+                      time horizon
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Diversification across sectors and assets to manage risk
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Regular portfolio review and rebalancing as markets change
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Tax-efficient options (e.g., ELSS) based on eligibility
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Clear guidance on costs, risk, liquidity, and expected
+                      return ranges
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
+                <img
+                  src="/images/services-main/ocean-freight.png"
+                  alt="Mutual Funds investment product"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
+              <div className="col-span-1 lg:col-span-3 lg:order-2 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
+                <h3
+                  id="retirement-planning"
+                  className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"
+                >
+                  Retirement Planning
+                </h3>
+
+                <p className="text-gray-600 mb-4 max-w-full">
+                  Plan for financial independence with a structured roadmap that
+                  covers income needs, inflation, healthcare, and life
+                  milestones. We align investments to your retirement timeline.
+                </p>
+
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Retirement corpus estimation with realistic assumptions
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Asset allocation strategy (equity / debt) by age & goals
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      SIP planning and step-up strategy to reach targets faster
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Withdrawal plan guidance to create stable post-retirement
+                      income
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Review and rebalancing as your life stage and markets
+                      evolve
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-span-1 lg:col-span-2 lg:order-1 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
+                <img
+                  src="/images/services-main/ocean-freight.png"
+                  alt="Retirement planning service"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
+              <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
+                <h3
+                  id="portfolio-management-pms"
+                  className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"
+                >
+                  Portfolio Management (PMS)
+                </h3>
+
+                <p className="text-gray-600 mb-4 max-w-full">
+                  For investors seeking a more customized approach, PMS offers
+                  curated portfolios aligned to your objectives and risk level.
+                  We help you monitor performance and maintain discipline.
+                </p>
+
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Goal-based onboarding and suitability assessment
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Portfolio construction with sector, style, and risk
+                      controls
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Periodic reporting and performance tracking against
+                      benchmarks
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Rebalancing and risk monitoring during market volatility
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Guidance on fees, taxation, and liquidity considerations
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
+                <img
+                  src="/images/services-main/ocean-freight.png"
+                  alt="Portfolio management (PMS) service"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
+              <div className="col-span-1 lg:col-span-3 lg:order-2 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
+                <h3
+                  id="life-insurance"
+                  className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"
+                >
                   Life Insurance
+                </h3>
+
+                <p className="text-gray-600 mb-4 max-w-full">
+                  Protect your family’s financial future with the right cover
+                  across term, savings, and goal-based plans. We help you choose
+                  a plan that matches your responsibilities and budget.
                 </p>
-              </li>
 
-              <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
-                </svg>
-                <p className="text-gray-700 text-sm md:text-base">
-                  Mediclaim (Health Insurance)
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Term insurance planning for adequate protection
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Coverage review based on income, loans, and dependents
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Guidance on riders (critical illness, accidental cover)
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Premium vs. benefit comparison across insurers
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Assistance with documentation and renewal reminders
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-span-1 lg:col-span-2 lg:order-1 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
+                <img
+                  src="/images/services-main/ocean-freight.png"
+                  alt="Life insurance protection plan"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
+              <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
+                <h3
+                  id="health-insurance"
+                  className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"
+                >
+                  Health Insurance
+                </h3>
+
+                <p className="text-gray-600 mb-4 max-w-full">
+                  Manage medical costs with comprehensive health cover for you
+                  and your family. We help you evaluate benefits, exclusions,
+                  networks, and add-ons for long-term peace of mind.
                 </p>
-              </li>
-            </ul>
-          </div>
 
-          <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
-            <Image src="/images/1.png" alt="Mutual Funds" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={600} />
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Sum insured planning based on city and family profile
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Comparison of room rent limits, co-pay, and waiting
+                      periods
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Guidance on add-ons (super top-up, maternity, OPD)
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Support for cashless network checks and renewals
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Claim guidance and documentation support when needed
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
+                <img
+                  src="/images/services-main/ocean-freight.png"
+                  alt="Health insurance cover for medical expenses"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
+              <div className="col-span-1 lg:col-span-3 lg:order-2 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
+                <h3
+                  id="general-insurance"
+                  className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"
+                >
+                  General Insurance
+                </h3>
+
+                <p className="text-gray-600 mb-4 max-w-full">
+                  Safeguard your assets with coverage for vehicle, home, travel,
+                  and other non-life risks. We help you compare plans and keep
+                  policies updated so you’re protected when it matters.
+                </p>
+
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Motor insurance planning (comprehensive vs. third-party)
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Home and property cover guidance for valuables and
+                      structure
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Travel insurance selection for domestic and international
+                      trips
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Renewal reminders and assistance with endorsements
+                    </p>
+                  </li>
+
+                  <li className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-theme1 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984a10 10 0 0 1 14.995 -8.984zm-1.293 5.953l-4 4l-2 -2a1 1 0 1 0 -1.414 1.414l2.707 2.707a1 1 0 0 0 1.414 0l4.707 -4.707a1 1 0 0 0 -1.414 -1.414z"></path>
+                    </svg>
+                    <p className="text-gray-700 text-sm md:text-base">
+                      Claim support and documentation guidance when required
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-span-1 lg:col-span-2 lg:order-1 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
+                <img
+                  src="/images/services-main/ocean-freight.png"
+                  alt="General insurance for assets and travel"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
           </div>
         </div>
-   
-        <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
-          <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-l-3xl overflow-hidden h-full">
-            <Image src="/images/services-main/air-freight.png" alt="Portfolio Management Service" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={600} />
-          </div>
-          <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
-            <h3 id="pms" className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
-              Portfolio Management Service (PMS)
-            </h3>
+      </section>
+      <Footer />
+    </main>
+  );
+};
 
-            <p className="text-gray-600 mb-4 max-w-full">
-              A regulated investment product offered through PMS providers.
-            </p>
-          </div>
-        </div>
-     
-        <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
-          <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
-            <h3 id="life-insurance" className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
-              Life Insurance
-            </h3>
-
-            <p className="text-gray-600 mb-4 max-w-full">
-              A regulated protection product offered through Insurance Companies.
-            </p>
-          </div>
-
-          <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
-            <Image src="/images/services-main/trucking.png" alt="Life Insurance" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={600} />
-          </div>
-        </div>
-      </div>
-   
-   
-   
-      <div className="lg:max-w-[1300px] mx-auto px-4 lg:px-6 text-left">
-        <div className="flex flex-col text-left mb-4">
-          <h2 className="font-sora text-3xl lg:text-4xl font-semibold text-left mb-2">
-            SERVICES (Advisory & Planning Support)
-          </h2>
-          <p className="text-gray-600 text-lg text-left mb-4 max-w-full">
-            These are professional financial advisory services. These involve strategy, financial planning, consultation, and goal-based advisory.
-          </p>
-        </div>
-       
-        <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
-          <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
-            <h3 id="mediclaim" className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
-              Mediclaim (Health Insurance)
-            </h3>
-
-            <p className="text-gray-600 mb-4 max-w-full">
-              A regulated health insurance product offered through Insurance Companies.
-            </p>
-          </div>
-
-          <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
-            <Image src="/images/services-main/customs-clearance.png" alt="Mediclaim" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={600} />
-          </div>
-        </div>
- 
-        <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
-          <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
-            <Image src="/images/services-main/tariff-inquiry.png" alt="Child Future Planning" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={600} />
-          </div>
-          <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
-            <h3 id="child-future-planning" className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
-              Child Future Planning
-            </h3>
-
-            <p className="text-gray-600 mb-4 max-w-full">
-              Goal-based planning and consultation to support your child’s future needs.
-            </p>
-          </div>
-        </div>
-       
-        <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
-          <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
-            <h3 id="retirement-planning" className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
-              Retirement Planning
-            </h3>
-
-            <p className="text-gray-600 mb-4 max-w-full">
-              Advisory and strategy support for long-term retirement readiness.
-            </p>
-          </div>
-
-          <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
-            <Image src="/images/services-main/dgft.png" alt="Retirement Planning" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={600} />
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-4 lg:gap-2 mb-8 bg-theme2/40 rounded-2xl">
-          <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-l-3xl overflow-hidden h-full">
-            <Image src="/images/services-main/licenses.png" alt="Tax Planning" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={600} />
-          </div>
-          <div className="col-span-1 lg:col-span-3 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-4 flex flex-col justify-start">
-            <h3 id="tax-planning" className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
-              Tax Planning
-            </h3>
-
-            <p className="text-gray-600 mb-4 max-w-full">
-              Strategy and consultation to optimize taxes aligned with your financial goals.
-            </p>
-          </div>
-        </div>
-      </div>
- 
-    
-    </section>
-    <Footer/>
-    </>
-  )
-}
-
-export default Services
+export default Services;
