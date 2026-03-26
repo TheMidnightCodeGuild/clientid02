@@ -72,6 +72,17 @@ const Navbar = () => {
               About Us
               <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </Link>
+             <Link
+              href="/gallery"
+              className="relative rounded-full py-1 transition-colors group"
+            >
+              Gallery
+              <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+            </Link>
+            
+
+
+
 
 
             <div className="relative inline-flex text-gray-800">
