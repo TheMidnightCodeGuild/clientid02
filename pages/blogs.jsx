@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 import Navbar from "./components/header";
 import Footer from "./components/footer";
 
@@ -69,13 +70,55 @@ const Blogs = () => {
 
   return (
     <main>
+      <Head>
+        <title>Blogs | Shagun Shri Investment</title>
+        <meta
+          name="description"
+          content="Read the latest financial insights, investment tips, and insurance guides from Shagun Shri Investment — helping you make smarter, more informed financial decisions."
+        />
+      </Head>
       <Navbar />
+
+      <section
+        className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-center justify-center flex-col relative font-dm"
+        style={{ backgroundImage: "url('/images/home.png')" }}
+      >
+        <div className="absolute inset-0 bg-gray-800/50"></div>
+        <div className="lg:max-w-[1300px] mx-auto px-4 flex items-center justify-center flex-col w-full gap-3 relative z-10 text-center">
+          <h1 className="font-lexend text-3xl lg:text-5xl text-left text-white font-bold">
+            Our Blogs
+          </h1>
+          <p className="text-white text-sm font-medium lg:text-base max-w-xl">
+            Stay informed with the latest financial insights, investment tips,
+            and insurance guides from our experts — empowering you to make
+            smarter financial decisions for you and your family.
+          </p>
+          <a
+            href="/contact-us"
+            className="ml-0 mt-1 rounded-full bg-white text-black font-semibold text-sm lg:text-base px-2 py-1 lg:px-3 lg:py-1.5 flex items-center transition-colors duration-200"
+          >
+            Contact us
+            <span className="ml-2 w-8 h-8 rounded-full bg-theme1 flex items-center justify-center">
+              <svg
+                className="lg:w-5 lg:h-5 w-4 h-4 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 18L18 6M18 6H10M18 6V14"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
 
       <section className="bg-[#F8F9FB] py-12 lg:py-16">
         <div className="max-w-[1300px] mx-auto px-4">
-          <h1 className="text-3xl lg:text-4xl font-semibold text-center mb-10">
-            Blogs
-          </h1>
 
           {error && (
             <div className="mb-6 p-4 bg-red-50 text-red-600 rounded-lg">

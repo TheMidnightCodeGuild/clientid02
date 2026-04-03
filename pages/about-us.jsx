@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Navbar from "./components/header";
 import Footer from "./components/footer";
 import Link from "next/link";
@@ -7,86 +8,67 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
+      <Head>
+        <title>About Us | Shagun Shri Investment</title>
+        <meta
+          name="description"
+          content="Learn about Shagun Shri Investment and our founder Mr. Dev M. Bajpai — a trusted financial consultant dedicated to helping individuals and families achieve long-term financial stability through investments, insurance, and personalized financial planning."
+        />
+      </Head>
       <Navbar />
-  <section className="h-[200px] lg:h-[550px] mt-10 lg:mt-0 flex items-center justify-center flex-col relative overflow-hidden">
-
-  {/* Background Image (mirrored) */}
-  <div
-    className="absolute inset-0 bg-cover bg-center scale-x-[-1]"
-    style={{
-      backgroundImage: "url('/images/home.png')",
-    }}
-  ></div>
-
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/20"></div>
-
-  {/* Content */}
-  <div className="relative lg:max-w-[1300px] w-full mx-auto flex flex-col justify-start px-4 pt-10 md:pt-5">
-    
-    <h1 className="text-4xl lg:text-5xl uppercase tracking-wider font-bold text-white font-lexend">
-      About Us
-    </h1>
-
-    <nav className="flex mt-3 font-lexend" aria-label="Breadcrumb">
-      <ol className="inline-flex items-center space-x-1 md:space-x-2">
-
-        <li className="inline-flex items-center">
-          <Link href="/" className="inline-flex items-center text-base text-white">
-            <svg
-              className="w-3 h-3 me-2.5"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-            </svg>
-            Home
-          </Link>
-        </li>
-
-        <li>
-          <div className="flex items-center">
-            <svg
-              className="w-3 h-3 text-white mx-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-
-            <span className="ms-1 text-base text-white md:ms-2">
-              About Us
+      <section
+        className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-center justify-center flex-col relative font-dm"
+        style={{ backgroundImage: "url('/images/home.png')" }}
+      >
+        <div className="absolute inset-0 bg-gray-800/50"></div>
+        <div className="lg:max-w-[1300px] mx-auto px-4 flex items-center justify-center flex-col w-full gap-3 relative z-10 text-center">
+          <h1 className="font-lexend text-3xl lg:text-5xl text-left text-white font-bold">
+            About Us
+          </h1>
+          <p className="text-white text-sm font-medium lg:text-base max-w-xl">
+            Led by Mr. Dev M. Bajpai, Shagun Shri Investment is committed to
+            helping individuals and families achieve long-term financial
+            stability through trusted investment, insurance, and financial
+            planning guidance since 2013.
+          </p>
+          <a
+            href="/contact-us"
+            className="ml-0 mt-1 rounded-full bg-white text-black font-semibold text-sm lg:text-base px-2 py-1 lg:px-3 lg:py-1.5 flex items-center transition-colors duration-200"
+          >
+            Contact us
+            <span className="ml-2 w-8 h-8 rounded-full bg-theme1 flex items-center justify-center">
+              <svg
+                className="lg:w-5 lg:h-5 w-4 h-4 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 18L18 6M18 6H10M18 6V14"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </span>
-          </div>
-        </li>
-
-      </ol>
-    </nav>
-
-  </div>
-
-</section>
+          </a>
+        </div>
+      </section>
 
       <section className="bg-gray-50 py-16">
         <div className="lg:max-w-[1300px] mx-auto px-4">
           <div className="grid lg:grid-cols-[420px_1fr] gap-8 items-start">
             <div className="relative">
               <div className="rounded-[20px] border border-gray-200 overflow-hidden bg-theme2/10 p-2">
-                <Image
-                  src="/images/founder.png"
-                  alt="Mr. Dev Bajpai"
-                  width={500}
-                  height={500}
-                  className="w-full h-[500px] object-top object-cover rounded-[20px]"
-                />
+                <div className="relative h-[500px] w-full rounded-[20px] overflow-hidden">
+                  <Image
+                    src="/images/founder.png"
+                    alt="Mr. Dev Bajpai"
+                    width={500}
+                    height={500}
+                    className="object-cover object-top"
+                  />
+                </div>
               </div>
             </div>
 

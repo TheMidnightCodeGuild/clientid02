@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Image from "next/image";
 import Navbar from "./components/header";
 import Footer from "./components/footer";
@@ -6,14 +7,21 @@ import Footer from "./components/footer";
 const Services = () => {
   return (
     <main className="font-dm">
+      <Head>
+        <title>Our Services | Shagun Shri Investment</title>
+        <meta
+          name="description"
+          content="Explore Shagun Shri Investment's financial services — mutual funds, retirement planning, portfolio management (PMS), life insurance, health insurance, and general insurance tailored to secure your financial future."
+        />
+      </Head>
       <Navbar />
       <section
-        className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-start justify-center flex-col relative font-dm"
+        className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-center justify-center flex-col relative font-dm"
         style={{ backgroundImage: "url('/images/home.png')" }}
       >
         <div className="absolute inset-0 bg-gray-800/50"></div>
 
-        <div className="lg:max-w-[1300px] mx-auto px-4 flex items-start justify-start flex-col w-full gap-3 relative z-10 lg:mt-0 mt-10">
+        <div className="lg:max-w-[1300px] mx-auto px-4 flex items-center justify-center flex-col w-full gap-3 relative z-10 text-center">
           <h1 className="font-lexend text-3xl lg:text-5xl text-left text-white font-bold">
             Our Services & Products
           </h1>
@@ -142,7 +150,7 @@ const Services = () => {
 
               <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
                 <img
-                  src="/images/services-main/ocean-freight.png"
+                  src="/images/services/mf.png"
                   alt="Mutual Funds investment product"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -237,7 +245,7 @@ const Services = () => {
 
               <div className="col-span-1 lg:col-span-2 lg:order-1 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
                 <img
-                  src="/images/services-main/ocean-freight.png"
+                  src="/images/services/rp.png"
                   alt="Retirement planning service"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -332,7 +340,7 @@ const Services = () => {
 
               <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
                 <img
-                  src="/images/services-main/ocean-freight.png"
+                  src="/images/services/pm.png"
                   alt="Portfolio management (PMS) service"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -425,7 +433,7 @@ const Services = () => {
 
               <div className="col-span-1 lg:col-span-2 lg:order-1 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
                 <img
-                  src="/images/services-main/ocean-freight.png"
+                  src="/images/services/li.png"
                   alt="Life insurance protection plan"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -519,7 +527,7 @@ const Services = () => {
 
               <div className="col-span-1 lg:col-span-2 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
                 <img
-                  src="/images/services-main/ocean-freight.png"
+                  src="/images/services/hi.png"
                   alt="Health insurance cover for medical expenses"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -614,7 +622,7 @@ const Services = () => {
 
               <div className="col-span-1 lg:col-span-2 lg:order-1 rounded-2xl lg:rounded-r-3xl overflow-hidden h-full">
                 <img
-                  src="/images/services-main/ocean-freight.png"
+                  src="/images/services/gi.png"
                   alt="General insurance for assets and travel"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />

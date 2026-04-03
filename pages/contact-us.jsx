@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import Head from "next/head";
 import Navbar from "./components/header";
-
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "./components/footer";
@@ -9,36 +9,52 @@ export default function Contactus() {
 
   return (
     <div>
+      <Head>
+        <title>Contact Us | Shagun Shri Investment</title>
+        <meta
+          name="description"
+          content="Get in touch with Shagun Shri Investment in Ujjain. Reach out to our financial advisor Mr. Dev Bajpai for expert guidance on mutual funds, insurance, and financial planning. Call +91 9425904786 or email shagunshri.invest@gmail.com."
+        />
+      </Head>
       <Navbar />
       {/* Banner Section */}
-      <div
-        className="bg-cover h-[200px] lg:h-[550px] mt-10 lg:mt-0 flex items-center bg-center object-cover justify-center flex-col relative"
-        style={{
-          backgroundImage: "url('/images/contactbanner.png')",
-          objectFit: "cover",
-        }}>
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="lg:mt-10 flex items-center justify-center flex-col w-full mt-10 ">
-          <h3 className="text-3xl text-center lg:text-5xl text-white relative z-0 mx-auto font-bold font-lora tracking-wider">
+      <section
+        className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-center justify-center flex-col relative font-dm"
+        style={{ backgroundImage: "url('/images/home.png')" }}
+      >
+        <div className="absolute inset-0 bg-gray-800/50"></div>
+        <div className="lg:max-w-[1300px] mx-auto px-4 flex items-center justify-center flex-col w-full gap-3 relative z-10 text-center">
+          <h1 className="font-lexend text-3xl lg:text-5xl text-left text-white font-bold">
             Contact Us
-          </h3>
-          <nav className="bg-gray-200/20 rounded-full px-6 mt-4 z-0 py-2">
-            <ol className="flex text-center justify-center">
-              <li>
-                <Link href="/" className="text-white">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <span className="mx-2 text-white font-semibold">&gt;</span>
-              </li>
-              <li>
-                <span className="text-white font-semibold">Contact</span>
-              </li>
-            </ol>
-          </nav>
+          </h1>
+          <p className="text-white text-sm font-medium lg:text-base max-w-xl">
+            Have a question about investments, insurance, or financial planning?
+            Reach out to our team — we're here to guide you every step of the
+            way toward your financial goals.
+          </p>
+          <a
+            href="tel:+919425904786"
+            className="ml-0 mt-1 rounded-full bg-white text-black font-semibold text-sm lg:text-base px-2 py-1 lg:px-3 lg:py-1.5 flex items-center transition-colors duration-200"
+          >
+            Call +91 9425904786
+            <span className="ml-2 w-8 h-8 rounded-full bg-theme1 flex items-center justify-center">
+              <svg
+                className="lg:w-5 lg:h-5 w-4 h-4 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 18L18 6M18 6H10M18 6V14"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
         </div>
-      </div>
+      </section>
 
      
 

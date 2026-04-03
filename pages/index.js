@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Head from "next/head";
 import Navbar from "./components/header";
 import Image from "next/image";
 import Footer from "./components/footer";
@@ -20,41 +21,50 @@ const index = () => {
       title: "Mutual Funds",
       description:
         "We provide expert guidance in selecting and managing mutual fund investments tailored to your financial goals, risk profile, and long-term wealth creation strategy.",
-      icon: "/images/1.png",
+      icon: "/images/services/mf.png",
     },
     {
       title: "Portfolio Management Service (PMS)",
       description:
         "Our Portfolio Management Services offer professionally managed investment portfolios designed to deliver optimized returns through strategic asset allocation and active management.",
-      icon: "/images/pms.png",
-    },
-    {
-      title: "Life Insurance",
-      description:
-        "We help you secure your family’s financial future with reliable life insurance solutions that provide protection, savings, and long-term financial stability.",
-      icon: "/images/life-insurance.png",
-    },
-    {
-      title: "Mediclaim (Health Insurance)",
-      description:
-        "Our health insurance solutions ensure financial protection against medical emergencies, offering comprehensive coverage and peace of mind for you and your family.",
-      icon: "/images/health-insurance.png",
-    },
-    {
-      title: "Child Future Planning",
-      description:
-        "We design structured investment plans to secure your child’s education and future milestones through disciplined and goal-oriented financial planning.",
-      icon: "/images/child-planning.png",
+      icon: "/images/services/pm.png",
     },
     {
       title: "Retirement Planning",
       description:
         "Our retirement planning strategies focus on building a stable and sufficient corpus to maintain your desired lifestyle after retirement.",
-      icon: "/images/retirement.png",
+      icon: "/images/services/rp.png",
     },
+    {
+      title: "Life Insurance",
+      description:
+        "We help you secure your family’s financial future with reliable life insurance solutions that provide protection, savings, and long-term financial stability.",
+          icon: "/images/services/li.png",
+
+    },
+    {
+      title: "Mediclaim (Health Insurance)",
+      description:
+        "Our health insurance solutions ensure financial protection against medical emergencies, offering comprehensive coverage and peace of mind for you and your family.",
+      icon: "/images/services/hi.png",
+    },
+        {
+      title: "General Insurance",
+      description:
+        "We offer comprehensive general insurance solutions to protect your assets, property, and business against unforeseen risks and damages.",
+      icon: "/images/services/gi.png",
+    },
+    
   ];
   return (
     <>
+      <Head>
+        <title>Shagun Shri Investment | Trusted Financial Advisory in Ujjain</title>
+        <meta
+          name="description"
+          content="Shagun Shri Investment offers expert mutual fund advisory, life & health insurance, retirement planning, and portfolio management services tailored for individuals and families in Ujjain since 2013."
+        />
+      </Head>
       <Navbar />
 
       <section className="relative h-screen overflow-hidden">
@@ -118,149 +128,85 @@ const index = () => {
         </div>
       </section>
       <section className="bg-[#fffff0] py-16">
-        <div className="lg:max-w-[1300px] px-4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="relative w-full mx-auto md:mx-0">
-            <div className="relative overflow-hidden rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                src="/images/1.png"
-                alt="Shagun Shri Investment"
-                className="w-full h-[300px] lg:h-[500px] object-cover border border-gray-200"
-              />
-            </div>
-
-            <div className="absolute -bottom-4 left-0 bg-theme1 backdrop-blur-md px-4 py-4 max-w-[350px]">
-              <p className="text-base font-lexend font-semibold text-white leading-snug">
-                Trusted Financial Guidance
-              </p>
-              <p className="text-sm text-white mt-1">
-                Helping individuals and families achieve financial freedom
-              </p>
-            </div>
-          </div>
-
+        <div className="lg:max-w-[1300px] px-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content - Left */}
           <div>
             <div className="flex items-center gap-2 pb-2">
               <div className="w-3 h-3 bg-theme1 rounded-sm"></div>
-              <span className="text-theme1 tracking-wider font-medium uppercase">
+              <span className="text-theme1 tracking-wider font-medium uppercase text-sm">
                 About Shagun Shri Investment
               </span>
             </div>
 
-            <h2 className="text-3xl font-lexend lg:text-4xl lg:leading-[40px] font-bold text-gray-900 mb-4">
-              Smart Investment & Insurance Solutions for Your Financial Security
+            <h2 className="text-3xl font-lexend lg:text-4xl lg:leading-[44px] font-bold text-gray-900 mb-4">
+              Smart Investment &amp; Insurance Solutions for Your Financial Security
             </h2>
 
-            <p className="text-gray-600 text-sm lg:text-base mb-6 max-w-2xl leading-relaxed">
+            <p className="text-gray-600 text-sm lg:text-base mb-6 leading-relaxed">
               Shagun Shri Investment, led by financial consultant Dev Bajpai,
               provides trusted financial guidance to help individuals and
               families build long-term financial stability. Our focus is on
               simplifying financial planning through reliable investment
               strategies, insurance protection, and tax-saving opportunities
-              tailored to each client’s needs.
+              tailored to each client's needs.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-6">
-              <div className="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#0B2C4D"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="icon icon-tabler icons-tabler-outline icon-tabler-checks"
-                >
-                  {" "}
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>{" "}
-                  <path d="M7 12l5 5l10 -10"></path>{" "}
-                  <path d="M2 12l5 5m5 -5l5 -5"></path>{" "}
-                </svg>
-                <span className="text-gray-700 font-semibold">
-                  Mutual Fund Investment Planning
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#0B2C4D"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="icon icon-tabler icons-tabler-outline icon-tabler-checks"
-                >
-                  {" "}
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>{" "}
-                  <path d="M7 12l5 5l10 -10"></path>{" "}
-                  <path d="M2 12l5 5m5 -5l5 -5"></path>{" "}
-                </svg>
-                <span className="text-gray-700 font-semibold">
-                  Life & Health Insurance
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#0B2C4D"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="icon icon-tabler icons-tabler-outline icon-tabler-checks"
-                >
-                  {" "}
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>{" "}
-                  <path d="M7 12l5 5l10 -10"></path>{" "}
-                  <path d="M2 12l5 5m5 -5l5 -5"></path>{" "}
-                </svg>
-                <span className="text-gray-700 font-semibold">
-                  Retirement Planning
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#0B2C4D"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="icon icon-tabler icons-tabler-outline icon-tabler-checks"
-                >
-                  {" "}
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>{" "}
-                  <path d="M7 12l5 5l10 -10"></path>{" "}
-                  <path d="M2 12l5 5m5 -5l5 -5"></path>{" "}
-                </svg>
-                <span className="text-gray-700 font-semibold">
-                  Portfolio Management
-                </span>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 mb-8">
+              {[
+                "Mutual Fund Investment Planning",
+                "Life & Health Insurance",
+                "Retirement Planning",
+                "Portfolio Management",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#0B2C4D"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 12l5 5l10 -10" />
+                    <path d="M2 12l5 5m5 -5l5 -5" />
+                  </svg>
+                  <span className="text-gray-700 font-semibold text-sm">{item}</span>
+                </div>
+              ))}
             </div>
 
             <a
               href="/about-us"
-              className="inline-flex items-center justify-center rounded-full bg-theme1 px-8 py-3 text-white font-semibold"
+              className="inline-flex items-center justify-center rounded-full bg-theme1 px-8 py-3 text-white font-semibold hover:opacity-90 transition"
             >
               Know More About Us
             </a>
+          </div>
+
+          {/* Founder Image - Right */}
+          <div className="relative w-full">
+            <div className="relative rounded-2xl overflow-hidden w-full h-[420px] lg:h-[520px] shadow-xl">
+              <Image
+                src="/images/founder.png"
+                alt="Mr. Dev Bajpai – Founder, Shagun Shri Investment"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            {/* Floating badge */}
+            <div className="absolute -bottom-4 left-4 right-4 lg:left-6 lg:right-auto lg:w-[320px] bg-theme1 px-5 py-4 shadow-lg rounded-xl">
+              <p className="text-base font-lexend font-semibold text-white leading-snug">
+                Mr. Dev M. Bajpai
+              </p>
+              <p className="text-sm text-white/80 mt-1">
+                Founder &amp; Financial Consultant, Since 2013
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -681,100 +627,7 @@ const index = () => {
           </div>
         </div>
       </section>
-      <section className="bg-base-100 py-8 sm:py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* Section Header */}
-          <div className="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
-            <p className="text-primary text-sm font-medium uppercase">
-              Blog list
-            </p>
-            <h2 className="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
-              Plan your upcoming journey.
-            </h2>
-            <p className="text-base-content/80 text-xl">
-              Explore new destinations, indulge in local cuisines, and immerse
-              yourself in diverse cultures.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="card card-border shadow-none">
-              <figure>
-                <img
-                  src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/blog/blog-36.png"
-                  alt="Modern house"
-                />
-              </figure>
-              <div className="card-body gap-3">
-                <h5 className="card-title text-xl">
-                  Laws of Transfer of Immovable Property
-                </h5>
-                <p className="mb-5">
-                  Experience the charm of this lovely and cozy apartment,
-                  featuring warm decor and inviting spaces, perfect for
-                  relaxation and comfort, ideal for your next getaway.
-                </p>
-                <div className="card-actions">
-                  <a href="#" class="btn btn-primary btn-gradient">
-                    Read More
-                    <span class="icon-[tabler--arrow-right] size-5 rtl:rotate-180"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="card card-border shadow-none">
-              <figure>
-                <img
-                  src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/blog/blog-37.png"
-                  alt="Traditional house"
-                />
-              </figure>
-              <div className="card-body gap-3">
-                <h5 className="card-title text-xl">
-                  Thane Development Plan 2026 & Master Plan
-                </h5>
-                <p className="mb-5">
-                  Discover a unique nook in the heart of the city, offering
-                  convenience and access to attractions. Stylishly designed, it
-                  provides a comfortable retreat.
-                </p>
-                <div className="card-actions">
-                  <a href="#" className="btn btn-primary btn-gradient">
-                    Read More
-                    <span class="icon-[tabler--arrow-right] size-5 rtl:rotate-180"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="card card-border shadow-none">
-              <figure>
-                <img
-                  src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/blog/blog-38.png"
-                  alt="Modern house with pool"
-                />
-              </figure>
-              <div className="card-body gap-3">
-                <h5 className="card-title text-xl">
-                  What is a Property Sale Agreement?
-                </h5>
-                <p className="mb-5">
-                  Welcome to this charming independent house bedroom, featuring
-                  a spacious layout and cozy furnishings. Enjoy abundant natural
-                  light and peaceful.
-                </p>
-                <div className="card-actions">
-                  <a href="#" className="btn btn-primary btn-gradient">
-                    Read More
-                    <span className="icon-[tabler--arrow-right] size-5 rtl:rotate-180"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="faq" className="pb-10">
         <div className="max-w-[1300px] mx-auto px-4">
           <div className="text-center mb-6">
@@ -790,7 +643,18 @@ const index = () => {
               <button
                 type="button"
                 className="w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left"
-                onClick="toggleFAQ(this)"
+                onClick={(e) => {
+                  const item = e.currentTarget.closest(".faq-item");
+                  const answer = item.querySelector(".faq-answer");
+                  const icon = item.querySelector(".faq-icon");
+                  const isOpen =
+                    answer.style.maxHeight && answer.style.maxHeight !== "0px";
+                  answer.style.maxHeight = isOpen
+                    ? "0px"
+                    : answer.scrollHeight + "px";
+                  answer.style.paddingBottom = isOpen ? "0" : "";
+                  icon.textContent = isOpen ? "+" : "−";
+                }}
               >
                 <span className="font-semibold text-gray-900">
                   Which industries does your firm serve?
@@ -814,7 +678,17 @@ const index = () => {
               <button
                 type="button"
                 className="w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left"
-                onclick="toggleFAQ(this)"
+                onClick={(e) => {
+                  const item = e.currentTarget.closest(".faq-item");
+                  const answer = item.querySelector(".faq-answer");
+                  const icon = item.querySelector(".faq-icon");
+                  const isOpen =
+                    answer.style.maxHeight && answer.style.maxHeight !== "0px";
+                  answer.style.maxHeight = isOpen
+                    ? "0px"
+                    : answer.scrollHeight + "px";
+                  icon.textContent = isOpen ? "+" : "−";
+                }}
               >
                 <span className="font-semibold text-gray-900">
                   Do you provide complete GST and indirect tax compliance
@@ -838,7 +712,17 @@ const index = () => {
               <button
                 type="button"
                 className="w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left"
-                onclick="toggleFAQ(this)"
+                onClick={(e) => {
+                  const item = e.currentTarget.closest(".faq-item");
+                  const answer = item.querySelector(".faq-answer");
+                  const icon = item.querySelector(".faq-icon");
+                  const isOpen =
+                    answer.style.maxHeight && answer.style.maxHeight !== "0px";
+                  answer.style.maxHeight = isOpen
+                    ? "0px"
+                    : answer.scrollHeight + "px";
+                  icon.textContent = isOpen ? "+" : "−";
+                }}
               >
                 <span className="font-semibold text-gray-900">
                   What types of audits does your firm conduct?
@@ -862,7 +746,17 @@ const index = () => {
               <button
                 type="button"
                 className="w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left"
-                onclick="toggleFAQ(this)"
+                onClick={(e) => {
+                  const item = e.currentTarget.closest(".faq-item");
+                  const answer = item.querySelector(".faq-answer");
+                  const icon = item.querySelector(".faq-icon");
+                  const isOpen =
+                    answer.style.maxHeight && answer.style.maxHeight !== "0px";
+                  answer.style.maxHeight = isOpen
+                    ? "0px"
+                    : answer.scrollHeight + "px";
+                  icon.textContent = isOpen ? "+" : "−";
+                }}
               >
                 <span className="font-semibold text-gray-900">
                   Do you offer financial advisory and business consulting
@@ -886,7 +780,17 @@ const index = () => {
               <button
                 type="button"
                 className="w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left"
-                onclick="toggleFAQ(this)"
+                onClick={(e) => {
+                  const item = e.currentTarget.closest(".faq-item");
+                  const answer = item.querySelector(".faq-answer");
+                  const icon = item.querySelector(".faq-icon");
+                  const isOpen =
+                    answer.style.maxHeight && answer.style.maxHeight !== "0px";
+                  answer.style.maxHeight = isOpen
+                    ? "0px"
+                    : answer.scrollHeight + "px";
+                  icon.textContent = isOpen ? "+" : "−";
+                }}
               >
                 <span className="font-semibold text-gray-900">
                   Can you assist with company formation and regulatory
@@ -911,7 +815,17 @@ const index = () => {
               <button
                 type="button"
                 className="w-full flex items-center justify-between px-5 sm:px-6 py-4 text-left"
-                onclick="toggleFAQ(this)"
+                onClick={(e) => {
+                  const item = e.currentTarget.closest(".faq-item");
+                  const answer = item.querySelector(".faq-answer");
+                  const icon = item.querySelector(".faq-icon");
+                  const isOpen =
+                    answer.style.maxHeight && answer.style.maxHeight !== "0px";
+                  answer.style.maxHeight = isOpen
+                    ? "0px"
+                    : answer.scrollHeight + "px";
+                  icon.textContent = isOpen ? "+" : "−";
+                }}
               >
                 <span className="font-semibold text-gray-900">
                   How can we engage with & Associates?
