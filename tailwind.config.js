@@ -15,7 +15,6 @@ module.exports = {
     extend: {
       fontFamily: {
         dm: ["DM Sans", "sans-serif"],
-        dmsans: ["DM Sans", "sans-serif"],
         lexend: ["Lexend", "sans-serif"],
       },
       colors: {

@@ -62,11 +62,11 @@ const Gallery = () => {
       </Head>
       <Navbar />
       <section
-        className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-center justify-center flex-col relative font-dm"
+        className="bg-cover h-[400px] md:h-[450px] lg:h-[500px] flex items-start justify-center flex-col relative font-dm"
         style={{ backgroundImage: "url('/images/home.png')" }}
       >
         <div className="absolute inset-0 bg-gray-800/50"></div>
-        <div className="lg:max-w-[1300px] mx-auto px-4 flex items-center justify-center flex-col w-full gap-3 relative z-10 text-center">
+        <div className="lg:max-w-[1300px] mx-auto px-4 flex items-start justify-start flex-col w-full gap-3 relative z-10 text-center">
           <h1 className="font-lexend text-3xl lg:text-5xl text-left text-white font-bold">
             Our Gallery
           </h1>

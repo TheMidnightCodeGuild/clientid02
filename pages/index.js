@@ -354,8 +354,8 @@ const index = () => {
                 <span className="text-theme2">Services We Offer</span>
               </h2>
               <p className="text-gray-600 max-w-md sm:ml-auto leading-relaxed text-left">
-                End-to-end advisory, compliance, and consulting services
-                designed to strengthen governance
+                Tailored investment and insurance solutions designed to protect
+                and grow your wealth at every stage of life
               </p>
             </div>
           </div>
@@ -477,8 +477,8 @@ const index = () => {
                 Hear It From <span className="text-theme2">Our Clients</span>
               </h2>
               <p className="text-gray-800 max-w-md sm:ml-auto leading-relaxed">
-                Practical partnerships that translate into measurable growth,
-                sharper compliance, and calmer boardrooms.
+                Real stories from clients who trusted us with their financial
+                goals and achieved lasting peace of mind.
               </p>
             </div>
           </div>
@@ -497,14 +497,22 @@ const index = () => {
               </div>
               <div>
                 <p className="testimonial-text text-gray-700 leading-relaxed line-clamp-3">
-                  “Their compliance playbooks and internal-control walkthroughs
-                  have become the gold standard for our plants. Every audit
-                  cycle is calmer because their team thinks three steps ahead.”
+                  “Dev ji guided me through my first SIP investment and explained everything in simple terms.
+                  Within three years my portfolio has grown significantly. I trust Shagun Shri Investment
+                  completely with my family’s financial future.”
                 </p>
                 <button
                   type="button"
                   className="testimonial-toggle mt-3 text-sm font-semibold text-theme1 hover:text-[#1f5a12] transition"
                   data-expanded="false"
+                  onClick={(e) => {
+                    const btn = e.currentTarget;
+                    const p = btn.previousElementSibling;
+                    const expanded = btn.dataset.expanded === "true";
+                    p.classList.toggle("line-clamp-3", expanded);
+                    btn.dataset.expanded = expanded ? "false" : "true";
+                    btn.textContent = expanded ? "Read More" : "Read Less";
+                  }}
                 >
                   Read More
                 </button>
@@ -523,9 +531,9 @@ const index = () => {
                   <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z"></path>
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Amit Vora</h3>
+                  <h3 className="font-semibold text-gray-900">Ramesh Sharma</h3>
                   <p className="text-sm text-gray-500">
-                    Operations Head, Zenith Metals
+                    Teacher, Ujjain
                   </p>
                 </div>
               </div>
@@ -544,14 +552,22 @@ const index = () => {
               </div>
               <div>
                 <p className="testimonial-text text-gray-700 leading-relaxed line-clamp-3">
-                  “They built a cross-border holding structure, orchestrated RBI
-                  filings, and still made time to coach our finance team. It
-                  feels like having an in-house chief compliance officer.”
+                  “I approached Shagun Shri Investment for a Mediclaim policy for my parents. They compared
+                  multiple options, found the best coverage at an affordable premium, and supported us through
+                  the claim process too. Truly a dependable advisor.”
                 </p>
                 <button
                   type="button"
                   className="testimonial-toggle mt-3 text-sm font-semibold text-theme1 hover:text-[#1f5a12] transition"
                   data-expanded="false"
+                  onClick={(e) => {
+                    const btn = e.currentTarget;
+                    const p = btn.previousElementSibling;
+                    const expanded = btn.dataset.expanded === "true";
+                    p.classList.toggle("line-clamp-3", expanded);
+                    btn.dataset.expanded = expanded ? "false" : "true";
+                    btn.textContent = expanded ? "Read More" : "Read Less";
+                  }}
                 >
                   Read More
                 </button>
@@ -570,9 +586,9 @@ const index = () => {
                   <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z"></path>
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Ishita Menon</h3>
+                  <h3 className="font-semibold text-gray-900">Priya Verma</h3>
                   <p className="text-sm text-gray-500">
-                    Founder, Dwell &amp; Co.
+                    Homemaker, Ujjain
                   </p>
                 </div>
               </div>
@@ -591,14 +607,22 @@ const index = () => {
               </div>
               <div>
                 <p className="testimonial-text text-gray-700 leading-relaxed line-clamp-3">
-                  “Weekly steering calls, detailed MIS packs, and instant
-                  statutory updates mean our board meetings are now about
-                  strategy rather than catching up on compliance.”
+                  “Mr. Dev Bajpai helped us plan our retirement systematically. He suggested a balanced mix of
+                  mutual funds and insurance that suits our risk appetite. Now in our 50s, we feel genuinely
+                  secure about the future — something we couldn’t say before meeting him.”
                 </p>
                 <button
                   type="button"
                   className="testimonial-toggle mt-3 text-sm font-semibold text-theme1 hover:text-[#1f5a12] transition"
                   data-expanded="false"
+                  onClick={(e) => {
+                    const btn = e.currentTarget;
+                    const p = btn.previousElementSibling;
+                    const expanded = btn.dataset.expanded === "true";
+                    p.classList.toggle("line-clamp-3", expanded);
+                    btn.dataset.expanded = expanded ? "false" : "true";
+                    btn.textContent = expanded ? "Read More" : "Read Less";
+                  }}
                 >
                   Read More
                 </button>
@@ -617,9 +641,9 @@ const index = () => {
                   <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z"></path>
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Prakash Nair</h3>
+                  <h3 className="font-semibold text-gray-900">Suresh &amp; Kavita Gupta</h3>
                   <p className="text-sm text-gray-500">
-                    Independent Director, Suryodaya Group
+                    Business Owners, Ujjain
                   </p>
                 </div>
               </div>
@@ -635,7 +659,7 @@ const index = () => {
               Frequently Asked <span className="text-theme1">Questions</span>
             </h2>
             <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-              Find clarity on audits, taxation, compliance and advisory support.
+              Get answers to your questions about mutual funds, insurance, retirement planning, and investment advisory.
             </p>
           </div>
           <div className="space-y-4">
@@ -657,7 +681,7 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  Which industries does your firm serve?
+                  What services does Shagun Shri Investment offer?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -665,11 +689,10 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  With over four decades of experience, we serve clients across
-                  manufacturing, banking & NBFCs, real estate, infrastructure,
-                  healthcare, trading, professional services, and public sector
-                  undertakings. Our sectoral understanding enables us to provide
-                  practical and regulation-aligned solutions.
+                  We offer a comprehensive range of financial services including Mutual Fund investment planning,
+                  Portfolio Management Services (PMS), Retirement Planning, Life Insurance, Health Insurance
+                  (Mediclaim), and General Insurance. Our goal is to provide personalized, end-to-end financial
+                  solutions that align with your life goals and risk appetite.
                 </p>
               </div>
             </article>
@@ -691,8 +714,7 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  Do you provide complete GST and indirect tax compliance
-                  services?
+                  How do I start investing in Mutual Funds through Shagun Shri Investment?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -700,10 +722,10 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  Yes. We offer end-to-end GST compliance including
-                  registration, return filing, reconciliations, departmental
-                  notices, assessments, audits, and representation before
-                  authorities, ensuring timely compliance and risk mitigation.
+                  Getting started is simple. Reach out to us via our contact page or call us directly. Our advisor,
+                  Mr. Dev Bajpai, will understand your financial goals, assess your risk profile, and recommend a
+                  suitable mutual fund portfolio — whether SIP-based or lump sum — tailored specifically for you.
+                  We also assist with KYC completion and account setup.
                 </p>
               </div>
             </article>
@@ -725,7 +747,7 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  What types of audits does your firm conduct?
+                  What is the difference between Mutual Funds and Portfolio Management Services (PMS)?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -733,11 +755,11 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  We conduct statutory audits, internal audits, tax audits, bank
-                  audits, and special audits. The firm has also served as
-                  Statutory Central Auditors (SCAs) for banks and financial
-                  institutions, reflecting our expertise in regulated
-                  environments.
+                  Mutual Funds pool money from multiple investors and invest in diversified assets, making them
+                  suitable for most investors. PMS (Portfolio Management Services), on the other hand, offers
+                  individually managed investment portfolios with a higher degree of customization and active
+                  management, typically suited for high-net-worth individuals (HNIs) with larger investable surpluses.
+                  We help you choose the right option based on your financial situation.
                 </p>
               </div>
             </article>
@@ -759,8 +781,7 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  Do you offer financial advisory and business consulting
-                  services?
+                  Why should I get Life Insurance or Health Insurance through a financial advisor?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -768,10 +789,11 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  Yes. Our advisory services include financial planning,
-                  feasibility studies, business restructuring, valuation, risk
-                  assessment, and strategic guidance to support informed
-                  decision-making and sustainable growth.
+                  A financial advisor helps you identify the right plan based on your age, income, family needs, and
+                  existing coverage — rather than just picking a policy off the shelf. At Shagun Shri Investment, we
+                  compare plans across leading insurers, explain the fine print, help you avoid over-insuring or
+                  under-insuring, and assist you during claims. Our guidance ensures your insurance truly protects you
+                  when it matters most.
                 </p>
               </div>
             </article>
@@ -793,8 +815,7 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  Can you assist with company formation and regulatory
-                  compliance?
+                  When should I start planning for retirement?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -802,11 +823,10 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  We provide comprehensive corporate compliance services
-                  including company incorporation, ROC filings, corporate
-                  restructuring, secretarial compliance, and advisory on
-                  regulatory matters to ensure seamless governance and statutory
-                  adherence.
+                  The earlier, the better. Starting your retirement plan in your 20s or 30s allows the power of
+                  compounding to work in your favour, requiring smaller monthly contributions to build a substantial
+                  corpus. Even if you start later, our advisors can design a catch-up strategy with a mix of
+                  high-return mutual funds, pension plans, and other instruments to help you retire comfortably.
                 </p>
               </div>
             </article>
@@ -828,7 +848,7 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  How can we engage with & Associates?
+                  How can I get in touch with Shagun Shri Investment?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -836,11 +856,10 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  You may connect with us through our contact channels to
-                  discuss your requirements. After understanding your
-                  objectives, we provide a structured engagement proposal
-                  outlining scope, timelines, and professional fees, ensuring
-                  clarity and transparency from the outset.
+                  You can reach us through our Contact Us page, call us directly at our office in Ujjain, or drop
+                  us a message via WhatsApp. Mr. Dev Bajpai personally consults with each client to understand their
+                  financial needs. We offer a free initial consultation to help you get started on your financial
+                  journey with confidence.
                 </p>
               </div>
             </article>
@@ -851,7 +870,7 @@ const index = () => {
       <section className="relative text-white h-[400px]">
         <div className="absolute inset-0">
           <img
-            src="/images/home-banner.jpg"
+            src="/images/home.png"
             alt="cta"
             className="w-full h-full object-cover"
           />
@@ -868,8 +887,8 @@ const index = () => {
             </h1>
 
             <p className="text-gray-300 mb-6 text-lg italic">
-              Delivering reliable audit, taxation, and compliance solutions
-              backed by experience, integrity, and regulatory expertise.
+              Delivering reliable investment advisory, insurance solutions, and
+              retirement planning backed by 13+ years of experience and trust.
             </p>
 
             <a
