@@ -39,8 +39,7 @@ const index = () => {
       title: "Life Insurance",
       description:
         "We help you secure your family’s financial future with reliable life insurance solutions that provide protection, savings, and long-term financial stability.",
-          icon: "/images/services/li.png",
-
+      icon: "/images/services/li.png",
     },
     {
       title: "Mediclaim (Health Insurance)",
@@ -48,22 +47,22 @@ const index = () => {
         "Our health insurance solutions ensure financial protection against medical emergencies, offering comprehensive coverage and peace of mind for you and your family.",
       icon: "/images/services/hi.png",
     },
-        {
+    {
       title: "General Insurance",
       description:
         "We offer comprehensive general insurance solutions to protect your assets, property, and business against unforeseen risks and damages.",
       icon: "/images/services/gi.png",
     },
-    
   ];
   return (
     <>
       <Head>
-        <title>Shagun Shri Investment | Trusted Financial Advisory in Ujjain</title>
+        <title>ShagunShri Wealtha | Best Financial Advisory in Ujjain – Wealth Creation &amp; Protection</title>
         <meta
           name="description"
-          content="Shagun Shri Investment offers expert mutual fund advisory, life & health insurance, retirement planning, and portfolio management services tailored for individuals and families in Ujjain since 2013."
+          content="At ShagunShri Wealtha, we provide advisory services in wealth creation and wealth protection through financial planning. Trusted as the best financial consultant in Ujjain — offering mutual funds, insurance, retirement planning, and portfolio management."
         />
+        <meta name="keywords" content="financial advisor Ujjain, wealth creation Ujjain, wealth protection, mutual funds Ujjain, retirement planning, insurance advisor, portfolio management, ShagunShri Wealtha, best financial planning Ujjain" />
       </Head>
       <Navbar />
 
@@ -134,16 +133,17 @@ const index = () => {
             <div className="flex items-center gap-2 pb-2">
               <div className="w-3 h-3 bg-theme1 rounded-sm"></div>
               <span className="text-theme1 tracking-wider font-medium uppercase text-sm">
-                About Shagun Shri Investment
+                About ShagunShri-Wealtha
               </span>
             </div>
 
             <h2 className="text-3xl font-lexend lg:text-4xl lg:leading-[44px] font-bold text-gray-900 mb-4">
-              Smart Investment &amp; Insurance Solutions for Your Financial Security
+              Smart Investment &amp; Insurance Solutions for Your Financial
+              Security
             </h2>
 
             <p className="text-gray-600 text-sm lg:text-base mb-6 leading-relaxed">
-              Shagun Shri Investment, led by financial consultant Dev Bajpai,
+              ShagunShri-Wealtha, led by financial consultant Dev Bajpai,
               provides trusted financial guidance to help individuals and
               families build long-term financial stability. Our focus is on
               simplifying financial planning through reliable investment
@@ -174,7 +174,9 @@ const index = () => {
                     <path d="M7 12l5 5l10 -10" />
                     <path d="M2 12l5 5m5 -5l5 -5" />
                   </svg>
-                  <span className="text-gray-700 font-semibold text-sm">{item}</span>
+                  <span className="text-gray-700 font-semibold text-sm">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
@@ -192,7 +194,7 @@ const index = () => {
             <div className="relative rounded-2xl overflow-hidden w-full h-[420px] lg:h-[520px] shadow-xl">
               <Image
                 src="/images/founder.png"
-                alt="Mr. Dev Bajpai – Founder, Shagun Shri Investment"
+                alt="Mr. Dev Bajpai – Founder, ShagunShri-Wealtha"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -226,7 +228,7 @@ const index = () => {
               </h2>
 
               <p className="mt-3 text-gray-700">
-                At Shagun Shri Investment, we help individuals and families plan
+                At ShagunShri-Wealtha, we help individuals and families plan
                 their financial future with confidence. Our approach focuses on
                 transparent advice, personalized investment strategies, and
                 reliable insurance solutions designed to protect and grow your
@@ -497,8 +499,9 @@ const index = () => {
               </div>
               <div>
                 <p className="testimonial-text text-gray-700 leading-relaxed line-clamp-3">
-                  “Dev ji guided me through my first SIP investment and explained everything in simple terms.
-                  Within three years my portfolio has grown significantly. I trust Shagun Shri Investment
+                  “Dev ji guided me through my first SIP investment and
+                  explained everything in simple terms. Within three years my
+                  portfolio has grown significantly. I trust ShagunShri-Wealtha
                   completely with my family’s financial future.”
                 </p>
                 <button
@@ -532,9 +535,7 @@ const index = () => {
                 </svg>
                 <div>
                   <h3 className="font-semibold text-gray-900">Ramesh Sharma</h3>
-                  <p className="text-sm text-gray-500">
-                    Teacher, Ujjain
-                  </p>
+                  <p className="text-sm text-gray-500">Teacher, Ujjain</p>
                 </div>
               </div>
             </article>
@@ -552,8 +553,9 @@ const index = () => {
               </div>
               <div>
                 <p className="testimonial-text text-gray-700 leading-relaxed line-clamp-3">
-                  “I approached Shagun Shri Investment for a Mediclaim policy for my parents. They compared
-                  multiple options, found the best coverage at an affordable premium, and supported us through
+                  “I approached ShagunShri-Wealtha for a Mediclaim policy for my
+                  parents. They compared multiple options, found the best
+                  coverage at an affordable premium, and supported us through
                   the claim process too. Truly a dependable advisor.”
                 </p>
                 <button
@@ -587,9 +589,7 @@ const index = () => {
                 </svg>
                 <div>
                   <h3 className="font-semibold text-gray-900">Priya Verma</h3>
-                  <p className="text-sm text-gray-500">
-                    Homemaker, Ujjain
-                  </p>
+                  <p className="text-sm text-gray-500">Homemaker, Ujjain</p>
                 </div>
               </div>
             </article>
@@ -607,9 +607,11 @@ const index = () => {
               </div>
               <div>
                 <p className="testimonial-text text-gray-700 leading-relaxed line-clamp-3">
-                  “Mr. Dev Bajpai helped us plan our retirement systematically. He suggested a balanced mix of
-                  mutual funds and insurance that suits our risk appetite. Now in our 50s, we feel genuinely
-                  secure about the future — something we couldn’t say before meeting him.”
+                  “Mr. Dev Bajpai helped us plan our retirement systematically.
+                  He suggested a balanced mix of mutual funds and insurance that
+                  suits our risk appetite. Now in our 50s, we feel genuinely
+                  secure about the future — something we couldn’t say before
+                  meeting him.”
                 </p>
                 <button
                   type="button"
@@ -641,7 +643,9 @@ const index = () => {
                   <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z"></path>
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Suresh &amp; Kavita Gupta</h3>
+                  <h3 className="font-semibold text-gray-900">
+                    Suresh &amp; Kavita Gupta
+                  </h3>
                   <p className="text-sm text-gray-500">
                     Business Owners, Ujjain
                   </p>
@@ -659,7 +663,8 @@ const index = () => {
               Frequently Asked <span className="text-theme1">Questions</span>
             </h2>
             <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-              Get answers to your questions about mutual funds, insurance, retirement planning, and investment advisory.
+              Get answers to your questions about mutual funds, insurance,
+              retirement planning, and investment advisory.
             </p>
           </div>
           <div className="space-y-4">
@@ -681,7 +686,7 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  What services does Shagun Shri Investment offer?
+                  What services does ShagunShri-Wealtha offer?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -689,10 +694,12 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  We offer a comprehensive range of financial services including Mutual Fund investment planning,
-                  Portfolio Management Services (PMS), Retirement Planning, Life Insurance, Health Insurance
-                  (Mediclaim), and General Insurance. Our goal is to provide personalized, end-to-end financial
-                  solutions that align with your life goals and risk appetite.
+                  We offer a comprehensive range of financial services including
+                  Mutual Fund investment planning, Portfolio Management Services
+                  (PMS), Retirement Planning, Life Insurance, Health Insurance
+                  (Mediclaim), and General Insurance. Our goal is to provide
+                  personalized, end-to-end financial solutions that align with
+                  your life goals and risk appetite.
                 </p>
               </div>
             </article>
@@ -714,7 +721,8 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  How do I start investing in Mutual Funds through Shagun Shri Investment?
+                  How do I start investing in Mutual Funds through
+                  ShagunShri-Wealtha?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -722,10 +730,12 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  Getting started is simple. Reach out to us via our contact page or call us directly. Our advisor,
-                  Mr. Dev Bajpai, will understand your financial goals, assess your risk profile, and recommend a
-                  suitable mutual fund portfolio — whether SIP-based or lump sum — tailored specifically for you.
-                  We also assist with KYC completion and account setup.
+                  Getting started is simple. Reach out to us via our contact
+                  page or call us directly. Our advisor, Mr. Dev Bajpai, will
+                  understand your financial goals, assess your risk profile, and
+                  recommend a suitable mutual fund portfolio — whether SIP-based
+                  or lump sum — tailored specifically for you. We also assist
+                  with KYC completion and account setup.
                 </p>
               </div>
             </article>
@@ -747,7 +757,8 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  What is the difference between Mutual Funds and Portfolio Management Services (PMS)?
+                  What is the difference between Mutual Funds and Portfolio
+                  Management Services (PMS)?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -755,11 +766,14 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  Mutual Funds pool money from multiple investors and invest in diversified assets, making them
-                  suitable for most investors. PMS (Portfolio Management Services), on the other hand, offers
-                  individually managed investment portfolios with a higher degree of customization and active
-                  management, typically suited for high-net-worth individuals (HNIs) with larger investable surpluses.
-                  We help you choose the right option based on your financial situation.
+                  Mutual Funds pool money from multiple investors and invest in
+                  diversified assets, making them suitable for most investors.
+                  PMS (Portfolio Management Services), on the other hand, offers
+                  individually managed investment portfolios with a higher
+                  degree of customization and active management, typically
+                  suited for high-net-worth individuals (HNIs) with larger
+                  investable surpluses. We help you choose the right option
+                  based on your financial situation.
                 </p>
               </div>
             </article>
@@ -781,7 +795,8 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  Why should I get Life Insurance or Health Insurance through a financial advisor?
+                  Why should I get Life Insurance or Health Insurance through a
+                  financial advisor?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -789,11 +804,14 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  A financial advisor helps you identify the right plan based on your age, income, family needs, and
-                  existing coverage — rather than just picking a policy off the shelf. At Shagun Shri Investment, we
-                  compare plans across leading insurers, explain the fine print, help you avoid over-insuring or
-                  under-insuring, and assist you during claims. Our guidance ensures your insurance truly protects you
-                  when it matters most.
+                  A financial advisor helps you identify the right plan based on
+                  your age, income, family needs, and existing coverage — rather
+                  than just picking a policy off the shelf. At
+                  ShagunShri-Wealtha, we compare plans across leading insurers,
+                  explain the fine print, help you avoid over-insuring or
+                  under-insuring, and assist you during claims. Our guidance
+                  ensures your insurance truly protects you when it matters
+                  most.
                 </p>
               </div>
             </article>
@@ -823,10 +841,13 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  The earlier, the better. Starting your retirement plan in your 20s or 30s allows the power of
-                  compounding to work in your favour, requiring smaller monthly contributions to build a substantial
-                  corpus. Even if you start later, our advisors can design a catch-up strategy with a mix of
-                  high-return mutual funds, pension plans, and other instruments to help you retire comfortably.
+                  The earlier, the better. Starting your retirement plan in your
+                  20s or 30s allows the power of compounding to work in your
+                  favour, requiring smaller monthly contributions to build a
+                  substantial corpus. Even if you start later, our advisors can
+                  design a catch-up strategy with a mix of high-return mutual
+                  funds, pension plans, and other instruments to help you retire
+                  comfortably.
                 </p>
               </div>
             </article>
@@ -848,7 +869,7 @@ const index = () => {
                 }}
               >
                 <span className="font-semibold text-gray-900">
-                  How can I get in touch with Shagun Shri Investment?
+                  How can I get in touch with ShagunShri-Wealtha?
                 </span>
                 <span className="faq-icon w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-700 transition-transform">
                   +
@@ -856,10 +877,12 @@ const index = () => {
               </button>
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
-                  You can reach us through our Contact Us page, call us directly at our office in Ujjain, or drop
-                  us a message via WhatsApp. Mr. Dev Bajpai personally consults with each client to understand their
-                  financial needs. We offer a free initial consultation to help you get started on your financial
-                  journey with confidence.
+                  You can reach us through our Contact Us page, call us directly
+                  at our office in Ujjain, or drop us a message via WhatsApp.
+                  Mr. Dev Bajpai personally consults with each client to
+                  understand their financial needs. We offer a free initial
+                  consultation to help you get started on your financial journey
+                  with confidence.
                 </p>
               </div>
             </article>

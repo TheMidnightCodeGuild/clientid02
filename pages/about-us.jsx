@@ -10,11 +10,12 @@ const About = () => {
     <>
       <Navbar />
       <Head>
-        <title>About Us | Shagun Shri Investment</title>
+        <title>About Us | ShagunShri Wealtha – Wealth Creation &amp; Protection Advisory in Ujjain</title>
         <meta
           name="description"
-          content="Learn about Shagun Shri Investment and our founder Mr. Dev M. Bajpai — a trusted financial consultant dedicated to helping individuals and families achieve long-term financial stability through investments, insurance, and personalized financial planning."
+          content="Learn about ShagunShri Wealtha, the best financial advisory firm in Ujjain. Founded by Mr. Dev M. Bajpai, we specialize in wealth creation and wealth protection through expert financial planning, mutual funds, and insurance solutions."
         />
+        <meta name="keywords" content="about ShagunShri Wealtha, financial consultant Ujjain, Dev Bajpai, wealth planning Ujjain, best financial advisor Ujjain" />
       </Head>
       <main className="font-dm">
         <section
@@ -24,7 +25,7 @@ const About = () => {
           <div className="absolute inset-0 bg-gray-800/50"></div>
           <div className="max-w-[1300px] mx-auto px-4 flex items-start justify-start flex-col w-full gap-3 relative z-10 lg:mt-20 mt-10">
             <h1 className="font-dm text-3xl lg:text-5xl text-left text-white relative z-0 font-bold">
-              About Shagun Shri Investment
+              About ShagunShri-Wealtha
             </h1>
             <p className="text-white text-sm font-medium lg:text-base  max-w-xl">
               We are a trusted financial consultant delivering reliable
@@ -88,7 +89,7 @@ const About = () => {
 
                 <div className="mt-2 lg:text-lg text-base text-gray-700 leading-relaxed space-y-6 text-justify">
                   <p>
-                    Mr. Dev M. Bajpai, Founder of Shagun Shri Investment, is a
+                    Mr. Dev M. Bajpai, Founder of ShagunShri-Wealtha, is a
                     dedicated Financial Consultant committed to helping
                     individuals and families achieve financial stability and
                     long-term financial freedom. With extensive knowledge of
@@ -249,12 +250,12 @@ const About = () => {
               </h2>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Shagun Shri Investment, led by financial consultant Mr. Dev
-                Bajpai, provides reliable financial planning and investment
-                services designed to help individuals and families build
-                long-term financial security. Our services include mutual funds,
-                insurance solutions, tax planning, and portfolio management
-                tailored to each client’s financial goals.
+                ShagunShri-Wealtha, led by financial consultant Mr. Dev Bajpai,
+                provides reliable financial planning and investment services
+                designed to help individuals and families build long-term
+                financial security. Our services include mutual funds, insurance
+                solutions, tax planning, and portfolio management tailored to
+                each client’s financial goals.
               </p>
 
               <p className="text-gray-600 leading-relaxed">

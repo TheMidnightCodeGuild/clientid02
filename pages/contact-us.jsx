@@ -10,11 +10,12 @@ export default function Contactus() {
   return (
     <div>
       <Head>
-        <title>Contact Us | Shagun Shri Investment</title>
+        <title>Contact Us | ShagunShri Wealtha – Best Financial Advisor in Ujjain</title>
         <meta
           name="description"
-          content="Get in touch with Shagun Shri Investment in Ujjain. Reach out to our financial advisor Mr. Dev Bajpai for expert guidance on mutual funds, insurance, and financial planning. Call +91 9425904786 or email shagunshri.invest@gmail.com."
+          content="Contact ShagunShri Wealtha in Ujjain for expert advisory on wealth creation and wealth protection. Reach Mr. Dev Bajpai for mutual funds, insurance, and financial planning. Call +91 9425904786."
         />
+        <meta name="keywords" content="contact financial advisor Ujjain, ShagunShri Wealtha contact, wealth planning consultation Ujjain, Dev Bajpai contact" />
       </Head>
       <Navbar />
       {/* Banner Section */}

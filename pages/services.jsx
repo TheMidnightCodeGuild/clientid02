@@ -8,11 +8,12 @@ const Services = () => {
   return (
     <main className="font-dm">
       <Head>
-        <title>Our Services | Shagun Shri Investment</title>
+        <title>Our Services | ShagunShri Wealtha – Mutual Funds, Insurance &amp; Wealth Planning in Ujjain</title>
         <meta
           name="description"
-          content="Explore Shagun Shri Investment's financial services — mutual funds, retirement planning, portfolio management (PMS), life insurance, health insurance, and general insurance tailored to secure your financial future."
+          content="Explore ShagunShri Wealtha's financial services in Ujjain — mutual funds, portfolio management (PMS), retirement planning, life insurance, health insurance, and general insurance. Expert advisory for wealth creation and wealth protection."
         />
+        <meta name="keywords" content="mutual funds Ujjain, retirement planning Ujjain, PMS, life insurance, health insurance, general insurance, wealth protection, financial services Ujjain" />
       </Head>
       <Navbar />
       <section

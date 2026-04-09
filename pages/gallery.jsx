@@ -54,11 +54,12 @@ const Gallery = () => {
   return (
     <main className="font-dm">
       <Head>
-        <title>Gallery | Shagun Shri Investment</title>
+        <title>Gallery | ShagunShri Wealtha – Financial Advisory Events in Ujjain</title>
         <meta
           name="description"
-          content="Explore the gallery of Shagun Shri Investment — glimpse our events, client milestones, and financial advisory journey through our curated photo collection."
+          content="Browse the gallery of ShagunShri Wealtha — view our client events, financial planning workshops, and milestones that reflect our commitment to wealth creation and protection in Ujjain."
         />
+        <meta name="keywords" content="ShagunShri Wealtha gallery, financial advisor events Ujjain, wealth planning workshop" />
       </Head>
       <Navbar />
       <section

@@ -71,11 +71,12 @@ const Blogs = () => {
   return (
     <main>
       <Head>
-        <title>Blogs | Shagun Shri Investment</title>
+        <title>Blogs | ShagunShri Wealtha – Financial Planning Insights &amp; Tips in Ujjain</title>
         <meta
           name="description"
-          content="Read the latest financial insights, investment tips, and insurance guides from Shagun Shri Investment — helping you make smarter, more informed financial decisions."
+          content="Read financial planning articles and wealth management insights from ShagunShri Wealtha — the best financial advisory in Ujjain. Tips on mutual funds, wealth creation, insurance, and wealth protection."
         />
+        <meta name="keywords" content="financial planning blog Ujjain, wealth creation tips, mutual fund advice, insurance guide, ShagunShri Wealtha blog" />
       </Head>
       <Navbar />
 
@@ -119,7 +120,6 @@ const Blogs = () => {
 
       <section className="bg-[#F8F9FB] py-12 lg:py-16">
         <div className="max-w-[1300px] mx-auto px-4">
-
           {error && (
             <div className="mb-6 p-4 bg-red-50 text-red-600 rounded-lg">
               {error}
@@ -143,9 +143,7 @@ const Blogs = () => {
                       src={blog.imageUrl}
                       alt={blog.title}
                       className="w-full h-48 object-cover"
-                      onError={(e) =>
-                        (e.target.src = "/fallback.png")
-                      }
+                      onError={(e) => (e.target.src = "/fallback.png")}
                     />
                   ) : (
                     <div className="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
