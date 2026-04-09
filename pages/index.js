@@ -85,10 +85,8 @@ const index = () => {
               </p>
 
               <h1 className="text-3xl lg:text-6xl lg:leading-[60px] font-normal text-white font-lexend">
-                Integrity Driven Financial <br className="hidden sm:block" />
-                <span className="text-blue-600 font-bold">
-                  Planning Excellence
-                </span>
+                Investment for <br className="hidden sm:block" />
+                <span className="text-blue-600 font-bold"> Financial Freedom</span>
               </h1>
 
               <div className="max-w-3xl">
