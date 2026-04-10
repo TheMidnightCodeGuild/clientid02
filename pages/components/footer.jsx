@@ -179,7 +179,7 @@ const Footer = () => {
               </div>
              
                 <div className="ml-3 mt-0.5 flex-col w-full h-auto text-left text-sm lg:text-base text-gray-50 hover:text-white break-words">
-                Office: <br /> 0734-35001003, 9826479995
+                Office: <br /> 0734-3501003, 9826479995
               </div>
             </Link>
 
