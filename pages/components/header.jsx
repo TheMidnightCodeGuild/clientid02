@@ -198,7 +198,7 @@ const Navbar = () => {
                 height={60}
                 priority
               />
-              <span className="text-theme1 text-sm font-lexend font-bold leading-tight tracking-[0.05rem]">
+              <span className="text-theme1 text-sm font-lexend font-bold leading-tight uppercase tracking-[0.05rem]">
                 Shagunshri <br /> Wealtha
               </span>
             </Link>
