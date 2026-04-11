@@ -19,7 +19,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-gray-50 font-medium text-sm lg:text-base mb-6">
-            At Shagunshri, we provide advisory services in wealth creation and wealth protection through financial planning.
+            At Shagunshri Wealtha, we provide advisory services in wealth creation and wealth protection through financial planning.
           </p>
       
         </div>
@@ -66,15 +66,15 @@ const Footer = () => {
           <nav className="flex flex-col gap-2 lg:gap-3">
             <div>
               <Link
-                href="/services"
+                href="/services#children-planning"
                 className="text-sm lg:text-base text-gray-50 hover:text-white"
               >
-                Child Future Planning
+                Children Planning
               </Link>
             </div>
             <div>
               <Link
-                href="/services"
+                href="/services#retirement-planning"
                 className="text-sm lg:text-base text-gray-50 hover:text-white"
               >
                 Retirement Planning
@@ -82,10 +82,10 @@ const Footer = () => {
             </div>
             <div>
               <Link
-                href="/services/"
+                href="/services#pms"
                 className="text-sm lg:text-base text-gray-50 hover:text-white"
               >
-                Portfolio Management Service (PMS)
+                Portfolio Management (PMS)
               </Link>
             </div>
           </nav>
@@ -97,7 +97,7 @@ const Footer = () => {
           <nav className="flex flex-col gap-2 lg:gap-3">
             <div>
               <Link
-                href="/services"
+                href="/services#life-insurance"
                 className="text-sm lg:text-base text-gray-50 hover:text-white"
               >
                 Life Insurance
@@ -105,27 +105,31 @@ const Footer = () => {
             </div>
             <div>
               <Link
-                href="/services"
-                className="text-sm lg:text-base text-gray-50 hover:text-white"
+                href="/services#general-insurance"
+                className="text-sm lg:text-base text-gray-50 hover:text-white font-medium"
               >
                 General Insurance
               </Link>
-            </div>
-            <div>
-              <Link
-                href="/services"
-                className="text-sm lg:text-base text-gray-50 hover:text-white"
-              >
-                Personal Accident Insurance
-              </Link>
-            </div>
-            <div>
-              <Link
-                href="/services/"
-                className="text-sm lg:text-base text-gray-50 hover:text-white"
-              >
-                Health Insurance
-              </Link>
+              <ul className="pl-3 mt-1 space-y-1 border-l-2 border-blue-400/40">
+                <li className="flex items-center gap-1.5">
+                  <span className="w-1 h-1 rounded-full bg-blue-300 shrink-0" />
+                  <Link
+                    href="/services#health-insurance"
+                    className="text-xs text-gray-400 hover:text-white"
+                  >
+                    Health Insurance
+                  </Link>
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <span className="w-1 h-1 rounded-full bg-blue-300 shrink-0" />
+                  <Link
+                    href="/services#personal-accident-insurance"
+                    className="text-xs text-gray-400 hover:text-white"
+                  >
+                    Personal Accident Insurance
+                  </Link>
+                </li>
+              </ul>
             </div>
           </nav>
         </div>

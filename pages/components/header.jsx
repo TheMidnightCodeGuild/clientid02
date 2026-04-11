@@ -20,40 +20,36 @@ const Navbar = () => {
       <nav className="hidden md:flex bg-white shadow-lg font-dm fixed top-0 w-full z-50">
         <div className="lg:max-w-[1300px] w-full mx-auto px-4">
           <div className="flex justify-between items-center">
+
             {/* Logo */}
             <Link href="/" className="flex items-center gap-4">
               <Image
                 className="w-auto h-20"
                 src="/images/logo.png"
-                alt="ShagunShri-Wealtha logo"
+                alt="Shagunshri Wealtha logo"
                 width={60}
                 height={60}
                 priority
               />
               <span className="text-theme1 text-lg font-lexend font-bold leading-tight uppercase tracking-[0.1rem]">
-                ShagunShri <br /> Wealtha
+                Shagunshri <br /> Wealtha
               </span>
             </Link>
 
             {/* Nav Links */}
             <div className="flex items-center gap-8 text-black font-dm text-base font-medium">
+
               <Link href="/" className="relative py-1 transition-colors group">
                 Home
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               </Link>
 
-              <Link
-                href="/about-us"
-                className="relative py-1 transition-colors group"
-              >
+              <Link href="/about-us" className="relative py-1 transition-colors group">
                 About Us
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               </Link>
 
-              <Link
-                href="/gallery"
-                className="relative py-1 transition-colors group"
-              >
+              <Link href="/gallery" className="relative py-1 transition-colors group">
                 Gallery
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               </Link>
@@ -72,12 +68,7 @@ const Navbar = () => {
                     viewBox="0 0 16 16"
                     fill="none"
                   >
-                    <path
-                      d="M2 5L8 11L14 5"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    />
+                    <path d="M2 5L8 11L14 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                   </svg>
                 </button>
 
@@ -91,12 +82,11 @@ const Navbar = () => {
                   onMouseLeave={() => setDesktopServicesOpen(false)}
                 >
                   <div className="grid grid-cols-2 gap-6">
+
                     {/* Investment column */}
                     <div>
                       <p className="text-base font-semibold text-theme1 mb-2">Investment</p>
                       <div className="space-y-1">
-
-                        {/* Mutual Funds + inline sub-bullets */}
                         <Link href="/services#mutual-funds" className="block text-gray-700 hover:text-theme1 text-base font-medium">
                           Mutual Funds
                         </Link>
@@ -120,8 +110,6 @@ const Navbar = () => {
                             </Link>
                           </li>
                         </ul>
-
-                   
                       </div>
                     </div>
 
@@ -132,8 +120,6 @@ const Navbar = () => {
                         <Link href="/services#life-insurance" className="block text-gray-700 hover:text-theme1 text-base">
                           Life Insurance
                         </Link>
-
-                        {/* General Insurance + inline sub-bullets */}
                         <Link href="/services#general-insurance" className="block text-gray-700 hover:text-theme1 text-base font-medium pt-1">
                           General Insurance
                         </Link>
@@ -150,18 +136,15 @@ const Navbar = () => {
                               Personal Accident Insurance
                             </Link>
                           </li>
-                       
                         </ul>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
 
-              <Link
-                href="/blogs"
-                className="relative py-1 transition-colors group"
-              >
+              <Link href="/blogs" className="relative py-1 transition-colors group">
                 Blogs
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               </Link>
@@ -192,6 +175,7 @@ const Navbar = () => {
                   </svg>
                 </span>
               </Link>
+
             </div>
           </div>
         </div>
@@ -203,18 +187,19 @@ const Navbar = () => {
       <nav className="flex md:hidden bg-white shadow-lg font-dm fixed top-0 w-full z-50">
         <div className="w-full px-4">
           <div className="flex justify-between items-center">
+
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
               <Image
                 className="w-auto h-16"
                 src="/images/logo.png"
-                alt="ShagunShri-Wealtha logo"
+                alt="Shagunshri Wealtha logo"
                 width={60}
                 height={60}
                 priority
               />
               <span className="text-theme1 text-sm font-lexend font-bold leading-tight tracking-[0.05rem]">
-                Shagun Shri <br /> Investment
+                Shagunshri <br /> Wealtha
               </span>
             </Link>
 
@@ -224,29 +209,15 @@ const Navbar = () => {
               className="p-2 rounded-lg hover:bg-gray-100"
               aria-label="Open menu"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {mobileMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
             </button>
+
           </div>
         </div>
       </nav>
@@ -254,9 +225,8 @@ const Navbar = () => {
       {/* ═══════════════════════════════════════════
           MOBILE DRAWER  —  slide-in panel
       ═══════════════════════════════════════════ */}
-      <div
-        className={`fixed md:hidden inset-0 z-50 ${mobileMenuOpen ? "" : "pointer-events-none"}`}
-      >
+      <div className={`fixed md:hidden inset-0 z-50 ${mobileMenuOpen ? "" : "pointer-events-none"}`}>
+
         {/* Backdrop */}
         <div
           className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${
@@ -273,21 +243,17 @@ const Navbar = () => {
         >
           {/* Drawer Header */}
           <div className="flex justify-between items-center p-4 border-b border-gray-200">
-            <Link
-              href="/"
-              className="flex items-center gap-3"
-              onClick={closeMobileMenu}
-            >
+            <Link href="/" className="flex items-center gap-3" onClick={closeMobileMenu}>
               <Image
                 className="w-12 h-auto"
                 src="/images/logo.png"
-                alt="ShagunShri-Wealtha logo"
+                alt="Shagunshri Wealtha logo"
                 width={60}
                 height={60}
                 priority
               />
               <span className="text-theme1 text-sm font-lexend font-bold leading-tight tracking-[0.05rem]">
-                Shagun Shri <br /> Investment
+                Shagunshri <br /> Wealtha
               </span>
             </Link>
             <button
@@ -295,18 +261,8 @@ const Navbar = () => {
               className="p-2 rounded-lg hover:bg-gray-100"
               aria-label="Close menu"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
@@ -314,6 +270,7 @@ const Navbar = () => {
           {/* Drawer Links */}
           <div className="p-4 overflow-y-auto h-[calc(100vh-80px)]">
             <div className="space-y-2">
+
               <Link
                 href="/"
                 onClick={closeMobileMenu}
@@ -328,6 +285,14 @@ const Navbar = () => {
                 className="block px-4 py-3 text-base font-medium hover:bg-blue-50 rounded-lg transition-colors"
               >
                 About Us
+              </Link>
+
+              <Link
+                href="/gallery"
+                onClick={closeMobileMenu}
+                className="block px-4 py-3 text-base font-medium hover:bg-blue-50 rounded-lg transition-colors"
+              >
+                Gallery
               </Link>
 
               {/* Services Accordion */}
@@ -351,16 +316,21 @@ const Navbar = () => {
                   </svg>
                 </button>
 
-                <div className={`mt-2 space-y-1 pl-6 ${mobileServicesOpen ? "block" : "hidden"}`}>
+                <div className={`mt-1 pl-4 space-y-3 ${mobileServicesOpen ? "block" : "hidden"}`}>
 
-                  {/* Mutual Funds + inline sub-bullets */}
-                  <Link href="/services#mutual-funds" onClick={closeMobileMenu} className="block py-2 text-gray-700 font-medium hover:text-blue-600 text-sm">
+                  {/* Investment section */}
+                  <p className="text-xs font-semibold text-theme1 uppercase tracking-widest pt-1">Investment</p>
+                  <Link
+                    href="/services#mutual-funds"
+                    onClick={closeMobileMenu}
+                    className="block py-1 text-gray-700 font-medium hover:text-blue-600 text-sm"
+                  >
                     Mutual Funds
                   </Link>
-                  <ul className="pl-3 mb-1 space-y-1 border-l-2 border-blue-100">
+                  <ul className="pl-3 space-y-1 border-l-2 border-blue-100">
                     <li className="flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-theme1 shrink-0" />
-                      <Link href="/services#children-planning" onClick={closeMobileMenu} className="text-xs text-gray-500 hover:text-blue-600">
+                      <Link href="/services#children-planning" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
                         Children Planning
                       </Link>
                     </li>
@@ -373,36 +343,38 @@ const Navbar = () => {
                     <li className="flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-theme1 shrink-0" />
                       <Link href="/services#pms" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
-                        PMS
+                        Portfolio Management (PMS)
                       </Link>
                     </li>
                   </ul>
 
-                  <Link href="/services/retirement-planning" onClick={closeMobileMenu} className="block py-2 text-gray-600 hover:text-blue-600 text-sm">
-                    Retirement Planning
-                  </Link>
-                  <Link href="/services/pms" onClick={closeMobileMenu} className="block py-2 text-gray-600 hover:text-blue-600 text-sm">
-                    Portfolio Management (PMS)
-                  </Link>
-                  <Link href="/services/life-insurance" onClick={closeMobileMenu} className="block py-2 text-gray-600 hover:text-blue-600 text-sm">
+                  {/* Insurance section */}
+                  <p className="text-xs font-semibold text-theme1 uppercase tracking-widest pt-1">Insurance</p>
+                  <Link
+                    href="/services#life-insurance"
+                    onClick={closeMobileMenu}
+                    className="block py-1 text-gray-700 hover:text-blue-600 text-sm"
+                  >
                     Life Insurance
                   </Link>
-
-                  {/* General Insurance + inline sub-bullets */}
-                  <Link href="/services#general-insurance" onClick={closeMobileMenu} className="block py-2 text-gray-700 font-medium hover:text-blue-600 text-sm">
+                  <Link
+                    href="/services#general-insurance"
+                    onClick={closeMobileMenu}
+                    className="block py-1 text-gray-700 font-medium hover:text-blue-600 text-sm"
+                  >
                     General Insurance
                   </Link>
                   <ul className="pl-3 space-y-1 border-l-2 border-blue-100">
                     <li className="flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-theme1 shrink-0" />
-                      <Link href="/services#personal-accident-insurance" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
-                        Personal Accident Insurance
+                      <Link href="/services#health-insurance" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
+                        Health Insurance
                       </Link>
                     </li>
                     <li className="flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-theme1 shrink-0" />
-                      <Link href="/services#health-insurance" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
-                        Health Insurance
+                      <Link href="/services#personal-accident-insurance" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
+                        Personal Accident Insurance
                       </Link>
                     </li>
                   </ul>
@@ -427,6 +399,7 @@ const Navbar = () => {
                   Contact Now
                 </Link>
               </div>
+
             </div>
           </div>
         </div>
