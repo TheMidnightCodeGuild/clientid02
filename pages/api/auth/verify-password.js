@@ -4,10 +4,10 @@ import crypto from "crypto";
 // CHANGE THIS HASH to match your desired password.
 // To regenerate run in terminal:
 //   node -e "const c=require('crypto');console.log(c.createHash('sha256').update('YOUR_NEW_PASSWORD').digest('hex'))"
-// Current password: Shagunshri@2024
+// Current password: Shagunshri2026
 // ─────────────────────────────────────────────────────────────────────────────
 const PASSWORD_HASH =
-  "83bea6fdab66fa60dc91ea3859b06c5467847560af92cbc75af71aba9c2633d1";
+  "c7cbf332dd1d97421ea116ef86ad0c369da5e3bb8f113635fd7a0ce30b34941f";
 
 // In-memory rate-limit store (resets on server restart).
 // For production, swap with Redis or a database.
