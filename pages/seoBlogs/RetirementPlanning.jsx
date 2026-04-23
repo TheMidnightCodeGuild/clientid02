@@ -39,7 +39,7 @@ export default function RetirementPlanning() {
             helps you secure tomorrow while managing today.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Retirement Planning</span>
           </nav>
         </header>
@@ -315,9 +315,9 @@ export default function RetirementPlanning() {
             independent future today.
           </p>
           <p>
-            <a href="#">Book a Retirement Consultation</a> |{" "}
-            <a href="#">Explore Investment Services</a> |{" "}
-            <a href="#">Read More Retirement Guides</a>
+            <a href="/contact-us">Book a Retirement Consultation</a> |{" "}
+            <a href="/services">Explore Investment Services</a> |{" "}
+            <a href="/Insights">Read More Retirement Guides</a>
           </p>
         </section>
 
@@ -325,13 +325,13 @@ export default function RetirementPlanning() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">SIP Planning for Long-Term Goals</a>
+              <a href="/Insights">SIP Planning for Long-Term Goals</a>
             </li>
             <li>
-              <a href="#">How to Estimate Your Retirement Corpus</a>
+              <a href="/Insights">How to Estimate Your Retirement Corpus</a>
             </li>
             <li>
-              <a href="#">Insurance Essentials for Working Professionals</a>
+              <a href="/Insights">Insurance Essentials for Working Professionals</a>
             </li>
           </ul>
         </aside>

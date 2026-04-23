@@ -72,9 +72,9 @@ export default function Contactus() {
                     width={500}
                     height={300}
                   />
-                  <h1 className="font-manrope text-white text-4xl font-bold leading-10 absolute top-11 left-11">
+                  <h2 className="font-manrope text-white text-4xl font-bold leading-10 absolute top-11 left-11">
                     Contact us
-                  </h1>
+                  </h2>
                   <div className="absolute bottom-0 w-full lg:p-11 p-5">
                     <div className="bg-white/20 rounded-lg p-6 block">
                       <a href="javascript:;" className="flex items-center mb-6">

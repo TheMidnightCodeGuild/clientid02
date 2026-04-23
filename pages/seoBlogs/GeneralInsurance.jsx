@@ -40,7 +40,7 @@ export default function GeneralInsurance() {
             <strong>general insurance</strong> is not optional; it is essential.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>General Insurance</span>
           </nav>
         </header>
@@ -326,9 +326,9 @@ export default function GeneralInsurance() {
             financial peace of mind today.
           </p>
           <p>
-            <a href="#">Book an Insurance Consultation</a> |{" "}
-            <a href="#">Explore Investment Services</a> |{" "}
-            <a href="#">Read More Financial Guides</a>
+            <a href="/contact-us">Book an Insurance Consultation</a> |{" "}
+            <a href="/services">Explore Investment Services</a> |{" "}
+            <a href="/Insights">Read More Financial Guides</a>
           </p>
         </section>
 
@@ -336,13 +336,13 @@ export default function GeneralInsurance() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">How to Choose the Right General Insurance Policy</a>
+              <a href="/Insights">How to Choose the Right General Insurance Policy</a>
             </li>
             <li>
-              <a href="#">Health vs Life Insurance: Why You Need Both</a>
+              <a href="/Insights">Health vs Life Insurance: Why You Need Both</a>
             </li>
             <li>
-              <a href="#">SIP and Insurance for Long-Term Stability</a>
+              <a href="/Insights">SIP and Insurance for Long-Term Stability</a>
             </li>
           </ul>
         </aside>

@@ -125,9 +125,9 @@ const About = () => {
         <section className="text-gray-800 py-16">
           <div className="lg:max-w-[1300px] mx-auto px-4">
             <div className="mb-6">
-              <h1 className="text-3xl lg:text-4xl mb-2 font-bold text-gray-800">
+              <h2 className="text-3xl lg:text-4xl mb-2 font-bold text-gray-800">
                 Our Mission,Vision & Values
-              </h1>
+              </h2>
               <div className="h-1.5 w-32 bg-blue-600 rounded-full"></div>
             </div>
 

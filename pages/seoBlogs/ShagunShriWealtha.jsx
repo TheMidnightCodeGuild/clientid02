@@ -40,7 +40,7 @@ export default function ShagunShriWealtha() {
             many job professionals need expert support.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Shagunshri Wealtha</span>
           </nav>
         </header>
@@ -327,9 +327,9 @@ export default function ShagunShriWealtha() {
             success today.
           </p>
           <p>
-            <a href="#">Book a Financial Consultation</a> |{" "}
-            <a href="#">Explore Investment Services</a> |{" "}
-            <a href="#">Read More Wealth Guides</a>
+            <a href="/contact-us">Book a Financial Consultation</a> |{" "}
+            <a href="/services">Explore Investment Services</a> |{" "}
+            <a href="/Insights">Read More Wealth Guides</a>
           </p>
         </section>
 
@@ -337,13 +337,13 @@ export default function ShagunShriWealtha() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">How to Choose the Right Mutual Fund Strategy</a>
+              <a href="/Insights">How to Choose the Right Mutual Fund Strategy</a>
             </li>
             <li>
-              <a href="#">SIP, STP, and SWP Explained for Professionals</a>
+              <a href="/Insights">SIP, STP, and SWP Explained for Professionals</a>
             </li>
             <li>
-              <a href="#">Retirement Planning Checklist for Salaried Investors</a>
+              <a href="/Insights">Retirement Planning Checklist for Salaried Investors</a>
             </li>
           </ul>
         </aside>

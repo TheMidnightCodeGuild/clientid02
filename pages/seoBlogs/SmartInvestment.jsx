@@ -39,7 +39,7 @@ export default function SmartInvestment() {
             or rely on guesswork.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Smart Investment</span>
           </nav>
         </header>
@@ -349,9 +349,9 @@ export default function SmartInvestment() {
             confidence.
           </p>
           <p>
-            <a href="#">Book a Consultation</a> |{" "}
-            <a href="#">Explore Investment Services</a> |{" "}
-            <a href="#">Read More Wealth Guides</a>
+            <a href="/contact-us">Book a Consultation</a> |{" "}
+            <a href="/services">Explore Investment Services</a> |{" "}
+            <a href="/Insights">Read More Wealth Guides</a>
           </p>
         </section>
 
@@ -359,13 +359,13 @@ export default function SmartInvestment() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">Beginner&apos;s Guide to SIP Investing</a>
+              <a href="/Insights">Beginner&apos;s Guide to SIP Investing</a>
             </li>
             <li>
-              <a href="#">How to Build a Tax-Efficient Portfolio</a>
+              <a href="/Insights">How to Build a Tax-Efficient Portfolio</a>
             </li>
             <li>
-              <a href="#">Retirement Planning for Working Professionals</a>
+              <a href="/Insights">Retirement Planning for Working Professionals</a>
             </li>
           </ul>
         </aside>

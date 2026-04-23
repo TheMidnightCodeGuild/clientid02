@@ -40,7 +40,7 @@ export default function HealthInsurance() {
             can put your entire financial plan at risk.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Health Insurance</span>
           </nav>
         </header>
@@ -325,9 +325,9 @@ export default function HealthInsurance() {
             today.
           </p>
           <p>
-            <a href="#">Book a Health Insurance Consultation</a> |{" "}
-            <a href="#">Explore Investment Services</a> |{" "}
-            <a href="#">Read More Financial Guides</a>
+            <a href="/contact-us">Book a Health Insurance Consultation</a> |{" "}
+            <a href="/services">Explore Investment Services</a> |{" "}
+            <a href="/Insights">Read More Financial Guides</a>
           </p>
         </section>
 
@@ -335,13 +335,13 @@ export default function HealthInsurance() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">Health Insurance vs Corporate Coverage</a>
+              <a href="/Insights">Health Insurance vs Corporate Coverage</a>
             </li>
             <li>
-              <a href="#">Tax Saving Strategies with Insurance</a>
+              <a href="/Insights">Tax Saving Strategies with Insurance</a>
             </li>
             <li>
-              <a href="#">Building a Balanced Financial Portfolio</a>
+              <a href="/Insights">Building a Balanced Financial Portfolio</a>
             </li>
           </ul>
         </aside>

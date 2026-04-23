@@ -214,9 +214,9 @@ const index = () => {
         <div className="lg:max-w-[1300px] px-4 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="lg:w-3/4">
-              <h1 className="text-2xl text-black italic font-bold mb-2">
+              <h2 className="text-2xl text-black italic font-bold mb-2">
                 Why choose us?
-              </h1>
+              </h2>
 
               <h2 className="text-3xl text-black font-extrabold lg:text-4xl">
                 Trusted Guidance for{" "}
@@ -900,12 +900,12 @@ const index = () => {
 
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between lg:max-w-[1300px] mx-auto py-10 lg:py-2">
           <div className="w-full lg:mt-20 text-center m">
-            <h1 className="text-3xl lg:text-5xl font-extrabold mb-2 ">
+            <h2 className="text-3xl lg:text-5xl font-extrabold mb-2 ">
               Partner With Us for Trusted, <br />
               <span className="text-theme2">
                 Professional Financial Advisory
               </span>
-            </h1>
+            </h2>
 
             <p className="text-gray-300 mb-6 text-lg italic">
               Delivering reliable investment advisory, insurance solutions, and

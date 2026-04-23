@@ -40,7 +40,7 @@ export default function LifeInsurance() {
             becomes essential.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Life Insurance</span>
           </nav>
         </header>
@@ -342,9 +342,9 @@ export default function LifeInsurance() {
             today.
           </p>
           <p>
-            <a href="#">Book an Insurance Consultation</a> |{" "}
-            <a href="#">Explore Investment Services</a> |{" "}
-            <a href="#">Read More Financial Guides</a>
+            <a href="/contact-us">Book an Insurance Consultation</a> |{" "}
+            <a href="/services">Explore Investment Services</a> |{" "}
+            <a href="/Insights">Read More Financial Guides</a>
           </p>
         </section>
 
@@ -352,13 +352,13 @@ export default function LifeInsurance() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">Term Insurance vs ULIP: Which One to Choose?</a>
+              <a href="/Insights">Term Insurance vs ULIP: Which One to Choose?</a>
             </li>
             <li>
-              <a href="#">How SIP and Insurance Work Together</a>
+              <a href="/Insights">How SIP and Insurance Work Together</a>
             </li>
             <li>
-              <a href="#">Retirement Planning for Salaried Professionals</a>
+              <a href="/Insights">Retirement Planning for Salaried Professionals</a>
             </li>
           </ul>
         </aside>

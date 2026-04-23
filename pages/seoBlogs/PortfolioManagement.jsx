@@ -40,7 +40,7 @@ export default function PortfolioManagement() {
             fail to deliver optimal results.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Portfolio Management</span>
           </nav>
         </header>
@@ -332,9 +332,9 @@ export default function PortfolioManagement() {
             financial future with confidence.
           </p>
           <p>
-            <a href="#">Book a Portfolio Review</a> |{" "}
-            <a href="#">Explore Investment Services</a> |{" "}
-            <a href="#">Read More Wealth Guides</a>
+            <a href="/contact-us">Book a Portfolio Review</a> |{" "}
+            <a href="/services">Explore Investment Services</a> |{" "}
+            <a href="/Insights">Read More Wealth Guides</a>
           </p>
         </section>
 
@@ -342,13 +342,13 @@ export default function PortfolioManagement() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">How to Diversify Your Mutual Fund Portfolio</a>
+              <a href="/Insights">How to Diversify Your Mutual Fund Portfolio</a>
             </li>
             <li>
-              <a href="#">SIP, STP, SWP: When to Use Each Strategy</a>
+              <a href="/Insights">SIP, STP, SWP: When to Use Each Strategy</a>
             </li>
             <li>
-              <a href="#">Retirement Planning Checklist for Professionals</a>
+              <a href="/Insights">Retirement Planning Checklist for Professionals</a>
             </li>
           </ul>
         </aside>

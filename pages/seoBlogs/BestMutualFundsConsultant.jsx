@@ -38,7 +38,7 @@ export default function BestMutualFundsConsultant() {
             the right strategy? That is where most job professionals struggle.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Best Mutual Fund Consultant</span>
           </nav>
         </header>
@@ -344,9 +344,9 @@ export default function BestMutualFundsConsultant() {
             today.
           </p>
           <p>
-            <a href="#">Book a Consultation</a> |{" "}
-            <a href="#">Explore Mutual Fund Services</a> |{" "}
-            <a href="#">Read More Wealth Guides</a>
+            <a href="/contact-us">Book a Consultation</a> |{" "}
+            <a href="/services">Explore Mutual Fund Services</a> |{" "}
+            <a href="/Insights">Read More Wealth Guides</a>
           </p>
         </section>
 
@@ -354,13 +354,13 @@ export default function BestMutualFundsConsultant() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">SIP vs STP: Which Strategy Fits Your Goal?</a>
+              <a href="/Insights">SIP vs STP: Which Strategy Fits Your Goal?</a>
             </li>
             <li>
-              <a href="#">How to Build a Tax-Efficient Investment Plan</a>
+              <a href="/Insights">How to Build a Tax-Efficient Investment Plan</a>
             </li>
             <li>
-              <a href="#">Life Insurance Basics for Working Professionals</a>
+              <a href="/Insights">Life Insurance Basics for Working Professionals</a>
             </li>
           </ul>
         </aside>

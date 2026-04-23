@@ -40,7 +40,7 @@ export default function BestInvestmentConsultant() {
             right financial decisions can feel overwhelming.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Best Investment Consultant</span>
           </nav>
         </header>
@@ -392,9 +392,9 @@ export default function BestInvestmentConsultant() {
             financial success today.
           </p>
           <p>
-            <a href="#">Book a Consultation</a> |{" "}
-            <a href="#">Explore Investment Services</a> |{" "}
-            <a href="#">Read More Wealth Guides</a>
+            <a href="/contact-us">Book a Consultation</a> |{" "}
+            <a href="/services">Explore Investment Services</a> |{" "}
+            <a href="/Insights">Read More Wealth Guides</a>
           </p>
         </section>
 
@@ -402,13 +402,13 @@ export default function BestInvestmentConsultant() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">How SIP, STP, and SWP Work Together</a>
+              <a href="/Insights">How SIP, STP, and SWP Work Together</a>
             </li>
             <li>
-              <a href="#">Mutual Fund Basics for Job Professionals</a>
+              <a href="/Insights">Mutual Fund Basics for Job Professionals</a>
             </li>
             <li>
-              <a href="#">Retirement Planning Checklist</a>
+              <a href="/Insights">Retirement Planning Checklist</a>
             </li>
           </ul>
         </aside>

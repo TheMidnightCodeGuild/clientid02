@@ -39,7 +39,7 @@ export default function MutualFunds() {
             efficient ways to build long-term wealth.
           </p>
           <nav aria-label="Breadcrumb">
-            <a href="#">Home</a> &gt; <a href="#">SEO Blogs</a> &gt;{" "}
+            <a href="/">Home</a> &gt; <a href="/Insights">SEO Blogs</a> &gt;{" "}
             <span>Mutual Funds Explained</span>
           </nav>
         </header>
@@ -345,9 +345,9 @@ export default function MutualFunds() {
             confidence.
           </p>
           <p>
-            <a href="#">Book a Consultation</a> |{" "}
-            <a href="#">Explore Mutual Fund Services</a> |{" "}
-            <a href="#">Read More Wealth Guides</a>
+            <a href="/contact-us">Book a Consultation</a> |{" "}
+            <a href="/services">Explore Mutual Fund Services</a> |{" "}
+            <a href="/Insights">Read More Wealth Guides</a>
           </p>
         </section>
 
@@ -355,13 +355,13 @@ export default function MutualFunds() {
           <h2>Related Resources</h2>
           <ul>
             <li>
-              <a href="#">Beginner's Guide to SIP Investments</a>
+              <a href="/Insights">Beginner's Guide to SIP Investments</a>
             </li>
             <li>
-              <a href="#">ELSS vs Traditional Tax Saving Options</a>
+              <a href="/Insights">ELSS vs Traditional Tax Saving Options</a>
             </li>
             <li>
-              <a href="#">How to Build a Balanced Investment Portfolio</a>
+              <a href="/Insights">How to Build a Balanced Investment Portfolio</a>
             </li>
           </ul>
         </aside>
