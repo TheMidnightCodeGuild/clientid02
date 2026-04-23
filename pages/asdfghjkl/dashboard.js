@@ -67,6 +67,7 @@ export default function Dashboard() {
     <>
       <Head>
         <title>Dashboard — Shagunshri Wealtha</title>
+        <meta name="robots" content="noindex,nofollow,noarchive" />
       </Head>
 
       <style>{dashboardStyles}</style>
@@ -168,6 +169,7 @@ function LoginGate({ onSuccess }) {
     <>
       <Head>
         <title>Login — Shagunshri Wealtha Dashboard</title>
+        <meta name="robots" content="noindex,nofollow,noarchive" />
       </Head>
       <style>{loginStyles}</style>
 

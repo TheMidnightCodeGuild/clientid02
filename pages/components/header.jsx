@@ -93,7 +93,7 @@ const Navbar = () => {
                         <ul className="pl-3 space-y-0.5 border-l-2 border-blue-100">
                           <li className="flex items-center gap-1">
                             <span className="w-1 h-1 rounded-full bg-theme1 shrink-0" />
-                            <Link href="/services#children-planning" className="text-gray-500 hover:text-theme1 text-sm">
+                            <Link href="/services#mutual-funds" className="text-gray-500 hover:text-theme1 text-sm">
                               Children Planning
                             </Link>
                           </li>
@@ -105,7 +105,7 @@ const Navbar = () => {
                           </li>
                           <li className="flex items-center gap-1">
                             <span className="w-1 h-1 rounded-full bg-theme1 shrink-0" />
-                            <Link href="/services#pms" className="text-gray-500 hover:text-theme1 text-sm">
+                            <Link href="/services#portfolio-management-pms" className="text-gray-500 hover:text-theme1 text-sm">
                               Portfolio Management (PMS)
                             </Link>
                           </li>
@@ -132,7 +132,7 @@ const Navbar = () => {
                           </li>
                           <li className="flex items-center gap-1">
                             <span className="w-1 h-1 rounded-full bg-theme1 shrink-0" />
-                            <Link href="/services#personal-accident-insurance" className="text-gray-500 hover:text-theme1 text-sm">
+                            <Link href="/services#general-insurance" className="text-gray-500 hover:text-theme1 text-sm">
                               Personal Accident Insurance
                             </Link>
                           </li>
@@ -330,7 +330,7 @@ const Navbar = () => {
                   <ul className="pl-3 space-y-1 border-l-2 border-blue-100">
                     <li className="flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-theme1 shrink-0" />
-                      <Link href="/services#children-planning" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
+                      <Link href="/services#mutual-funds" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
                         Children Planning
                       </Link>
                     </li>
@@ -342,7 +342,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-theme1 shrink-0" />
-                      <Link href="/services#pms" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
+                      <Link href="/services#portfolio-management-pms" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
                         Portfolio Management (PMS)
                       </Link>
                     </li>
@@ -373,7 +373,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-theme1 shrink-0" />
-                      <Link href="/services#personal-accident-insurance" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
+                      <Link href="/services#general-insurance" onClick={closeMobileMenu} className="text-sm text-gray-500 hover:text-blue-600">
                         Personal Accident Insurance
                       </Link>
                     </li>

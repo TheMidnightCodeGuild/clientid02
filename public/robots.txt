@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /asdfghjkl/
+
+Sitemap: https://www.shagunshriwealtha.com/sitemap.xml

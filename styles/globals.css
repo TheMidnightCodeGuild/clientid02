@@ -15,3 +15,134 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.seo-blog-page {
+  min-height: 100%;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.seo-blog-wrap {
+  padding: 6.75rem 1rem 3rem;
+}
+
+.seo-blog-article {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+  font-family: "DM Sans", sans-serif;
+  color: #1f2937;
+}
+
+.seo-blog-article > header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.seo-blog-article nav {
+  margin-top: 0.625rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.seo-blog-article nav a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.seo-blog-article nav a:hover {
+  text-decoration: underline;
+}
+
+.seo-blog-article h1 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  color: #0f172a;
+}
+
+.seo-blog-article h2 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.35;
+  margin-top: 1.5rem;
+  color: #1e3a8a;
+}
+
+.seo-blog-article h3 {
+  font-size: 1.1rem;
+  line-height: 1.45;
+  margin-top: 1rem;
+  color: #1f2937;
+}
+
+.seo-blog-article p,
+.seo-blog-article li {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.seo-blog-article p {
+  margin-top: 0.75rem;
+}
+
+.seo-blog-article ul,
+.seo-blog-article ol {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.seo-blog-article section {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.875rem;
+  background: #f8fafc;
+}
+
+.seo-blog-article figure {
+  margin-top: 1rem;
+}
+
+.seo-blog-article img {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.seo-blog-article figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.seo-blog-article aside,
+.seo-blog-article footer {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.875rem;
+}
+
+.seo-blog-article a {
+  color: #1d4ed8;
+}
+
+@media (min-width: 768px) {
+  .seo-blog-wrap {
+    padding: 7.25rem 1.25rem 3.5rem;
+  }
+
+  .seo-blog-article {
+    padding: 1.75rem;
+  }
+
+  .seo-blog-article h1 {
+    font-size: 2.25rem;
+  }
+}

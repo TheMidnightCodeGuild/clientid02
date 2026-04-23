@@ -50,7 +50,7 @@ const Footer = () => {
 
             <div>
               <Link
-                href="/Contactus"
+                href="/contact-us"
                 className="text-sm lg:text-base text-gray-50 hover:text-white"
               >
                 Contact us
@@ -66,7 +66,7 @@ const Footer = () => {
           <nav className="flex flex-col gap-2 lg:gap-3">
             <div>
               <Link
-                href="/services#children-planning"
+                href="/services#mutual-funds"
                 className="text-sm lg:text-base text-gray-50 hover:text-white"
               >
                 Children Planning
@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
             <div>
               <Link
-                href="/services#pms"
+                href="/services#portfolio-management-pms"
                 className="text-sm lg:text-base text-gray-50 hover:text-white"
               >
                 Portfolio Management (PMS)
@@ -123,7 +123,7 @@ const Footer = () => {
                 <li className="flex items-center gap-1.5">
                   <span className="w-1 h-1 rounded-full bg-blue-300 shrink-0" />
                   <Link
-                    href="/services#personal-accident-insurance"
+                    href="/services#general-insurance"
                     className="text-xs text-gray-400 hover:text-white"
                   >
                     Personal Accident Insurance
