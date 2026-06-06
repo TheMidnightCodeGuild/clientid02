@@ -201,7 +201,7 @@ const index = () => {
             {/* Floating badge */}
             <div className="absolute -bottom-4 left-4 right-4 lg:left-6 lg:right-auto lg:w-[320px] bg-theme1 px-5 py-4 shadow-lg rounded-xl">
               <p className="text-base font-lexend font-semibold text-white leading-snug">
-                Mr. Dev M. Bajpai
+                Mr. Dev M Bajpai
               </p>
               <p className="text-sm text-white/80 mt-1">
                 Founder &amp; Financial Consultant, Since 2013
@@ -729,7 +729,7 @@ const index = () => {
               <div className="faq-answer px-5 sm:px-6 pb-0 text-gray-600 leading-relaxed overflow-hidden max-h-0 transition-all duration-300">
                 <p className="pb-5">
                   Getting started is simple. Reach out to us via our contact
-                  page or call us directly. Our advisor, Mr. Dev Bajpai, will
+                  page or call us directly. Our advisor, Mr. Dev M Bajpai, will
                   understand your financial goals, assess your risk profile, and
                   recommend a suitable mutual fund portfolio — whether SIP-based
                   or lump sum — tailored specifically for you. We also assist

@@ -84,12 +84,12 @@ const About = () => {
                 </div>
 
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 font-lexend">
-                  Mr. Dev M. Bajpai
+                  Mr. Dev M Bajpai
                 </h2>
 
                 <div className="mt-2 lg:text-lg text-base text-gray-700 leading-relaxed space-y-6 text-justify">
                   <p>
-                    Mr. Dev M. Bajpai, Founder of ShagunShri-Wealtha, is a
+                    Mr. Dev M Bajpai, Founder and CEO of ShagunShri-Wealtha, is a
                     dedicated Financial Consultant committed to helping
                     individuals and families achieve financial stability and
                     long-term financial freedom. With extensive knowledge of
